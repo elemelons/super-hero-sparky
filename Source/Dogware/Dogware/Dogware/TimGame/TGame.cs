@@ -43,7 +43,7 @@ namespace TimGame
 
         public void LoadSceneAdditive(Scene scene)
         {
-            activeScene.InitScene();
+            scene.InitScene();
         }
     }
 }

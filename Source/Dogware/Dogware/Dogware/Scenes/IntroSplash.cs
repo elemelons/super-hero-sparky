@@ -11,7 +11,7 @@ namespace Dogware.Scenes
 {
     class IntroSplash : Scene
     {
-        private float timer = 3;
+        private float timer = 2;
 
         public IntroSplash() : base("Main Menu")
         {

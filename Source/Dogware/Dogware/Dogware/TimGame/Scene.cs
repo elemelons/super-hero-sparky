@@ -15,6 +15,7 @@ namespace TimGame
         {
             Console.WriteLine("Scene '" + name + "' created. (not yet initialized!)");
             Name = name;
+            SceneObjects = new List<GameObject>();
         }
 
         public GameObject MakeSceneObject(GameObject obj) //only used to track all objects related to this scene in the List SceneObjects, doesn't do much more.

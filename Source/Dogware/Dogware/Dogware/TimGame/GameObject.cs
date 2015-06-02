@@ -93,7 +93,8 @@ namespace TimGame
         public void ChangeSprite(string name)
         {
             spriteName = name;
-            sprite = null;
+            sprite = SpriteLoader.Instance.GetSprite(spriteName);
+            origin = new Vector2(this.sprite.Width * 0.5f, this.sprite.Height * 0.5f);
         }
 
         public virtual void Draw(SpriteBatch batch)
@@ -104,7 +105,7 @@ namespace TimGame
             }
             else
             {
-                sprite = SpriteLoader.Instance.GetSprite(spriteName);
+                ChangeSprite(spriteName);
 
                 if (this.sprite != null)
                     origin = new Vector2(this.sprite.Width * 0.5f, this.sprite.Height * 0.5f);

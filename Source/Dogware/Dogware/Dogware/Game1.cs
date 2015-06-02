@@ -20,6 +20,9 @@ namespace Game1
             graphics = new GraphicsDeviceManager(this);
             game.SetGraphics(graphics);
             Content.RootDirectory = "Content";
+
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.PreferredBackBufferHeight = 600;
         }
 
         /// <summary>

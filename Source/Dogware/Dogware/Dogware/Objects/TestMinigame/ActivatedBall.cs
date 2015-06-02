@@ -20,7 +20,7 @@ namespace Dogware.Objects.TestMinigame
         {
             if (Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Space))
             {
-                ChangeSprite("Ball.png");
+                ChangeSprite("ball.png");
                 Activated = true;
 
                 Console.WriteLine("Space pressed");

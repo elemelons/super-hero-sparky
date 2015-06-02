@@ -14,7 +14,8 @@ namespace Dogware.Scenes.Minigames
 
         public override void InitScene()
         {
-            ball = new ActivatedBall(new Vector2(100, 200));
+            base.InitScene();
+            ball = (ActivatedBall)MakeSceneObject(new ActivatedBall(new Vector2(100, 200)));
         }
 
         public TestGame() : base("Testgame", 5)
