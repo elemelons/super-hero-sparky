@@ -6,7 +6,7 @@ using TimGame;
 
 namespace Dogware.Scenes.Minigames
 {
-    public abstract class MinigameBase : Scene
+    public abstract class MinigameBase : Scene //asdafasdf
     {
         private float time = 0;
 

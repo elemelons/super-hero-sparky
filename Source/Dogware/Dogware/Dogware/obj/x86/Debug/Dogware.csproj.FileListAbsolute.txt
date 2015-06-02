@@ -26,3 +26,5 @@ C:\Users\Tim\Documents\HR\Project\Source\Dogware\Dogware\Dogware\bin\Windows\Deb
 C:\Users\Tim\Documents\HR\Project\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.exe
 C:\Users\Tim\Documents\HR\Project\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.pdb
 C:\Users\Tim\Documents\HR\Project\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\SelectionArrow.png
+C:\Users\Tim\Documents\HR\Project\repository\super-hero-sparky\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.exe
+C:\Users\Tim\Documents\HR\Project\repository\super-hero-sparky\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.pdb
