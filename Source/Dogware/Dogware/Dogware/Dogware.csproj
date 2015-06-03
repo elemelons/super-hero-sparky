@@ -55,6 +55,7 @@
     <Compile Include="Scenes\Minigames\MinigameServer.cs" />
     <Compile Include="Scenes\Minigames\TestGame.cs" />
     <Compile Include="Scenes\Minigames\TestGame2.cs" />
+    <Compile Include="TimGame\Renderer.cs" />
     <Compile Include="TimGame\Scene.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

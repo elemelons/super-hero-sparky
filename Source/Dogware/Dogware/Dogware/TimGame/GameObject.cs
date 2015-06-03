@@ -9,12 +9,25 @@ namespace TimGame
 {
     public abstract class GameObject
     {
+        public class RendererOptions
+        {
+            public int cols, rows, index;
+
+            public RendererOptions(int cols, int rows, int startIndex = 0)
+            {
+                this.cols = cols;
+                this.rows = rows;
+                index = startIndex;
+            }
+        }
+
         public static List<GameObject> AllObjects { get; private set; }
         public static List<GameObject> NewObjects { get; private set; }
 
         public bool Active = true;
 
         public Transform transform;
+        public Renderer renderer;
 
         private int drawDepth = 0;
 
@@ -42,7 +55,7 @@ namespace TimGame
         {
             get
             {
-                return new Rectangle((int)transform.Position.X, (int)transform.Position.Y, sprite.Width, sprite.Height);
+                return new Rectangle((int)transform.Position.X, (int)transform.Position.Y, (int)renderer.TextureWidth, (int)renderer.TextureHeight);
             }
         }
 
@@ -51,14 +64,27 @@ namespace TimGame
 
         private string spriteName;
         public bool IgnoreCollisions;
-        private Texture2D sprite;
-        protected Vector2 origin = Vector2.Zero;
 
         public bool destroyed = false;
 
-        public GameObject(string name, bool ignoreCollisions, Vector2 position, string spriteName)
+        public GameObject(string name, bool ignoreCollisions, Vector2 position, string spriteName, RendererOptions rendererOptions = null)
         {
             transform = new Transform(this);
+            renderer = new Renderer(this);
+
+            int cols = 1;
+            int rows = 1;
+            int index = 0;
+
+            if (rendererOptions != null)
+            {
+                cols = rendererOptions.cols;
+                rows = rendererOptions.rows;
+                index = rendererOptions.index;
+            }
+
+            renderer.SetTexture(spriteName, cols, rows);
+            renderer.ImageIndex = index;
 
             this.IgnoreCollisions = ignoreCollisions;
 
@@ -71,11 +97,6 @@ namespace TimGame
                 NewObjects = new List<GameObject>();
 
             NewObjects.Add(this);
-
-            this.sprite = SpriteLoader.Instance.GetSprite(spriteName);
-
-            if (this.sprite != null)
-                origin = new Vector2(this.sprite.Width * 0.5f, this.sprite.Height * 0.5f);
 
             this.spriteName = spriteName;
             this.Name = name;
@@ -92,27 +113,10 @@ namespace TimGame
             OnDestroy();
         }
 
-        public void ChangeSprite(string name)
-        {
-            spriteName = name;
-            sprite = SpriteLoader.Instance.GetSprite(spriteName);
-            origin = new Vector2(this.sprite.Width * 0.5f, this.sprite.Height * 0.5f);
-        }
-
         public virtual void Draw(SpriteBatch batch)
         {
-            if (sprite != null)
-            {
-                if(Active)
-                    batch.Draw(sprite, transform.Position, null, Color.White, transform.Rotation, origin, 1, SpriteEffects.None, 0);
-            }
-            else
-            {
-                ChangeSprite(spriteName);
-
-                if (this.sprite != null)
-                    origin = new Vector2(this.sprite.Width * 0.5f, this.sprite.Height * 0.5f);
-            }
+            if(Active)
+                renderer.Draw(batch);
         }
 
         public void UpdateObject()

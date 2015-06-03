@@ -19,7 +19,7 @@ namespace Dogware.Scenes.Minigames
             target = (TargetBall)MakeSceneObject(new TargetBall(new Vector2(400, 100), ball));
         }
 
-        public TestGame2() : base("Testgame", 2)
+        public TestGame2() : base("Testgame", 3)
         {
 
         }
