@@ -1,4 +1,6 @@
-﻿using Dogware.Scenes.Minigames;
+﻿using Dogware.Objects.LevelSceneObjects;
+using Dogware.Scenes.Minigames;
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,11 @@ namespace Dogware.Scenes
         private MinigameBase currentGame = null;
         private bool countedWin = false;
 
+        private float nextGameTimer = 3;
+        private float timeBetweenGames = 3;
+
+        private int indicatorAmount = 0;
+
         public LevelScene(int currentLevel) : base("LevelScene")
         {
             this.currentLevel = currentLevel;
@@ -29,33 +36,58 @@ namespace Dogware.Scenes
         {
             if (currentGame == null)
             {
-                currentGame = MinigameServer.GetMinigame(currentLevel);
-                TGame.Instance.LoadSceneAdditive(currentGame);
+                if (nextGameTimer < 0)
+                {
+                    if (gamesWon >= winsNeeded)
+                    {
+                        TGame.Instance.LoadScene(new MainMenu());
+                    }
+                    else
+                    {
+                        currentGame = MinigameServer.GetMinigame(currentLevel);
+                        TGame.Instance.LoadSceneAdditive(currentGame);
 
-                Console.WriteLine("Started game " + currentGame.Name);
-                countedWin = false;
+                        Console.WriteLine("Started game " + currentGame.Name);
+                        countedWin = false;
+
+                        foreach (GameObject obj in SceneObjects)
+                            obj.Active = false;
+                    }
+                }
+                else
+                {
+                    nextGameTimer -= 1f / 60f;
+
+                    foreach (GameObject obj in SceneObjects)
+                        obj.Active = true;
+
+                    if(indicatorAmount < gamesWon)
+                    {
+                        MakeSceneObject(new PointIndicator(new Vector2(100 + 50 * indicatorAmount, 50)));
+
+                        indicatorAmount++;
+                    }
+                }
             }
-
-            currentGame.Update();
-
-            if (currentGame.HasWon())
-                currentGame.ReduceTime();
-
-            if (currentGame.GameEnded())
+            else
             {
-                if (currentGame.HasWon() && !countedWin)
-                {
-                    gamesWon++;
-                    countedWin = true;
-                }
+                currentGame.Update();
 
-                if (gamesWon >= winsNeeded)
-                {
-                    TGame.Instance.LoadScene(new MainMenu());
-                }
+                if (currentGame.HasWon())
+                    currentGame.ReduceTime();
 
-                currentGame.Clean();
-                currentGame = null;
+                if (currentGame.GameEnded())
+                {
+                    if (currentGame.HasWon() && !countedWin)
+                    {
+                        gamesWon++;
+                        countedWin = true;
+                    }
+
+                    currentGame.Clean();
+                    currentGame = null;
+                    nextGameTimer = timeBetweenGames;
+                }
             }
         }
     }
