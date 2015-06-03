@@ -11,6 +11,14 @@ namespace Dogware.Scenes.Minigames
         private float time = 0;
         private float initialTime = 0;
 
+        public float TimeRemainingAsPercentage
+        {
+            get
+            {
+                return time / initialTime;
+            }
+        }
+
         public MinigameBase(string name, float time) : base(name)
         {
             this.time = time;

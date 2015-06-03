@@ -20,7 +20,7 @@ namespace Dogware.Scenes
 
         public override void Update()
         {
-            timer -= 0.01f;
+            timer -= 1f / 60f;
 
             if (timer < 0)
                 TGame.Instance.LoadScene(new MainMenu());

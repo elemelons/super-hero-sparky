@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="Game1.cs" />
     <Compile Include="Objects\Button.cs" />
+    <Compile Include="Objects\LevelSceneObjects\MinigameTimeIndicator.cs" />
     <Compile Include="Objects\LevelSceneObjects\PointIndicator.cs" />
     <Compile Include="Objects\QuitButton.cs" />
     <Compile Include="Objects\PlayButton.cs" />

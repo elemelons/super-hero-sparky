@@ -20,6 +20,8 @@ namespace Dogware.Scenes
         private float nextGameTimer = 3;
         private float timeBetweenGames = 3;
 
+        private MinigameTimeIndicator timeIndicator;
+
         private int indicatorAmount = 0;
 
         public LevelScene(int currentLevel) : base("LevelScene")
@@ -29,7 +31,7 @@ namespace Dogware.Scenes
 
         public override void InitScene()
         {
-            
+            timeIndicator = new MinigameTimeIndicator();
         }
 
         public override void Update()
@@ -52,6 +54,10 @@ namespace Dogware.Scenes
 
                         foreach (GameObject obj in SceneObjects)
                             obj.Active = false;
+
+                        timeIndicator.Active = true;
+                        timeIndicator.gameToTrack = currentGame;
+
                     }
                 }
                 else
@@ -60,6 +66,8 @@ namespace Dogware.Scenes
 
                     foreach (GameObject obj in SceneObjects)
                         obj.Active = true;
+
+                    timeIndicator.Active = false;
 
                     if(indicatorAmount < gamesWon)
                     {
