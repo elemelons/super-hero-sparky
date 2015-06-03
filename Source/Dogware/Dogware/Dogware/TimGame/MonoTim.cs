@@ -60,7 +60,7 @@ namespace TimGame
 
                 foreach (GameObject potentialCollision in GameObject.AllObjects)
                 {
-                    if (potentialCollision != toUpdate)
+                    if (potentialCollision != toUpdate && toUpdate.Active && potentialCollision.Active && !toUpdate.IgnoreCollisions && !potentialCollision.IgnoreCollisions)
                     {
                         if (collided.Find(o => ((o.objOne == toUpdate && o.objTwo == potentialCollision) || (o.objOne == potentialCollision && o.objTwo == toUpdate))) == null)
                         {

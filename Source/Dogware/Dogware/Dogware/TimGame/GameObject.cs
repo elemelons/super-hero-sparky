@@ -12,6 +12,8 @@ namespace TimGame
         public static List<GameObject> AllObjects { get; private set; }
         public static List<GameObject> NewObjects { get; private set; }
 
+        public bool Active = true;
+
         public Transform transform;
 
         private int drawDepth = 0;
@@ -48,17 +50,17 @@ namespace TimGame
         public GameObject Parent = null;
 
         private string spriteName;
-        private bool isStatic;
+        public bool IgnoreCollisions;
         private Texture2D sprite;
         protected Vector2 origin = Vector2.Zero;
 
         public bool destroyed = false;
 
-        public GameObject(string name, bool isStatic, Vector2 position, string spriteName)
+        public GameObject(string name, bool ignoreCollisions, Vector2 position, string spriteName)
         {
             transform = new Transform(this);
 
-            this.isStatic = isStatic;
+            this.IgnoreCollisions = ignoreCollisions;
 
             transform.Position = position;
 
@@ -101,7 +103,8 @@ namespace TimGame
         {
             if (sprite != null)
             {
-                batch.Draw(sprite, transform.Position, null, Color.White, transform.Rotation, origin, 1, SpriteEffects.None, 0);
+                if(Active)
+                    batch.Draw(sprite, transform.Position, null, Color.White, transform.Rotation, origin, 1, SpriteEffects.None, 0);
             }
             else
             {
@@ -114,7 +117,7 @@ namespace TimGame
 
         public void UpdateObject()
         {
-            if (!destroyed)
+            if (!destroyed && Active)
             {
                 transform.UpdateLocalPos();
 
