@@ -7,23 +7,20 @@ using TimGame;
 
 namespace Dogware.Objects.TestMinigame
 {
-    class ActivatedBall : GameObject
+    class MovingActivatedBall : GameObject
     {
         public bool Activated = false;
 
-        public ActivatedBall(Vector2 position) : base("Ball", false, position, "tinyBall.png")
+        public MovingActivatedBall(Vector2 position) : base("Ball", false, position, "tinyBall.png")
         {
 
         }
 
         public override void Update()
         {
-            if (Input.KeyHeld(Microsoft.Xna.Framework.Input.Keys.Space))
+            if (Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Space))
             {
-                ChangeSprite("ball.png");
-                Activated = true;
-
-                Console.WriteLine("Space pressed");
+                transform.Position += new Vector2(0, -25);
             }
         }
     }

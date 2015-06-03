@@ -10,14 +10,16 @@ namespace Dogware.Objects
 {
     class PlayButton : Button
     {
-        public PlayButton(Vector2 position) : base("Play", position, "ball.png")
-        {
+        private int levelToStart = 0;
 
+        public PlayButton(int level, Vector2 position) : base("Play", position, "ball.png")
+        {
+            levelToStart = level;
         }
 
         public override void OnButtonClick()
         {
-            TGame.Instance.LoadScene(new LevelScene(0));
+            TGame.Instance.LoadScene(new LevelScene(levelToStart));
         }
     }
 }

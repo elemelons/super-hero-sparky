@@ -47,8 +47,11 @@ namespace Dogware.Scenes
         {
             arrow = (SelectionArrow)MakeSceneObject(new SelectionArrow(new Vector2(10, 50)));
 
-            buttons.Add((Button)MakeSceneObject(new PlayButton(new Vector2(50, 50))));
-            buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(50, 100))));
+            buttons.Add((Button)MakeSceneObject(new PlayButton(0, new Vector2(50, 50))));
+            buttons.Add((Button)MakeSceneObject(new PlayButton(1, new Vector2(50, 100))));
+            buttons.Add((Button)MakeSceneObject(new PlayButton(2, new Vector2(50, 150))));
+
+            buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(50, 200))));
         }
     }
 }

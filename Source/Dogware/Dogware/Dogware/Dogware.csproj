@@ -47,11 +47,14 @@
     <Compile Include="Objects\SelectionArrow.cs" />
     <Compile Include="Objects\SplashLogo.cs" />
     <Compile Include="Objects\TestMinigame\ActivatedBall.cs" />
+    <Compile Include="Objects\TestMinigame\MovingActivatedBall.cs" />
+    <Compile Include="Objects\TestMinigame\TargetBall.cs" />
     <Compile Include="Scenes\IntroSplash.cs" />
     <Compile Include="Scenes\LevelScene.cs" />
     <Compile Include="Scenes\Minigames\MinigameBase.cs" />
     <Compile Include="Scenes\Minigames\MinigameServer.cs" />
     <Compile Include="Scenes\Minigames\TestGame.cs" />
+    <Compile Include="Scenes\Minigames\TestGame2.cs" />
     <Compile Include="TimGame\Scene.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

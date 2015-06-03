@@ -21,8 +21,15 @@ namespace Dogware.Scenes.Minigames
 
             new LevelGroup(new MinigameBase[]
                 {
+                    new TestGame2(),
                     new TestGame(),
-                    new TestGame(),
+                    new TestGame()
+                }),
+
+            new LevelGroup(new MinigameBase[]
+                {
+                    new TestGame2(),
+                    new TestGame2(),
                     new TestGame()
                 })
         };
