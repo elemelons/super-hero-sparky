@@ -13,6 +13,7 @@ namespace TimGame
         public Texture2D Texture {get; private set;}
         private string textureName;
         private int cols, rows;
+        public float Scale = 1;
 
         public int Frames
         {
@@ -29,7 +30,7 @@ namespace TimGame
                 if (Texture == null)
                     return 0;
 
-                return Texture.Width / cols;
+                return (Texture.Width / cols) * Scale;
             }
         }
 
@@ -40,7 +41,7 @@ namespace TimGame
                 if (Texture == null)
                     return 0;
 
-                return Texture.Height / rows;
+                return (Texture.Height / rows) * Scale;
             }
         }
 
@@ -106,7 +107,7 @@ namespace TimGame
                     origin.Y = (float)height / 2;
                 }
 
-                batch.Draw(Texture, owner.transform.Position, sourceRect, Color.White, owner.transform.Rotation, origin, 1, SpriteEffects.None, 0);
+                batch.Draw(Texture, owner.transform.Position, sourceRect, Color.White, owner.transform.Rotation, origin, Scale, SpriteEffects.None, 0);
                 //batch.Draw(Texture, owner.transform.Position, null, Color.White, owner.transform.Rotation, origin, 1, SpriteEffects.None, 0);
             }
             else
