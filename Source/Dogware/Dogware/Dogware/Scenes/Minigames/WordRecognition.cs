@@ -49,7 +49,7 @@ namespace Dogware.Scenes.Minigames
         {
             base.InitScene();
 
-            MakeSceneObject(new WordDisplay(Vector2.Zero, ""));
+            MakeSceneObject(new WordDisplay(new Vector2(400, 500), "Lots of Words!"));
         }
 
         public override void Update()
