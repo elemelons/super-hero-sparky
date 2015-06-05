@@ -32,8 +32,9 @@ namespace TimGame
             "WordRecognition/mouse.jpg",
             "WordRecognition/solaire.jpg",
             "WordRecognition/spider.jpg",
-            "SelectionArrow.png"
-        };
+            "SelectionArrow.png",
+            "NewFolder1/baseball.png",
+            "NewFolder1/tincan.jpg"        };
         
         public void Start()
         {
