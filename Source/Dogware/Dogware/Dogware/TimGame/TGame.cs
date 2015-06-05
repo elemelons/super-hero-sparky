@@ -23,7 +23,6 @@ namespace TimGame
             "SelectionArrow.png",
             "SelectionArrow.png",
             "WordRecognition/bat.jpg",
-            "WordRecognition/bug.jpg",
             "WordRecognition/cat.jpg",
             "WordRecognition/dog.jpg",
             "WordRecognition/fly.jpg",

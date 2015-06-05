@@ -1,9 +1,12 @@
-﻿using Dogware.Objects.WordRecognition;
+﻿using Dogware.Objects;
+using Dogware.Objects.WordRecognition;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TimGame;
 
 namespace Dogware.Scenes.Minigames
 {
@@ -11,13 +14,20 @@ namespace Dogware.Scenes.Minigames
     {
         private bool hasSelected = false;
         private bool hasWon;
+        private string CorrectAnswer;
+        Random random = new Random();
+        private ImageBlock[] blocks;
+        WordDisplay display;
+
+        private int selectionIndex = 0;
+
+        private SelectionArrow arrow;
 
         private int[] amountsPerLevel = new int[] { 2, 3, 5 };
 
         private ImagePair[] pairs = new ImagePair[]
         {
             new ImagePair("Vleermuis", "WordRecognition/bat.jpg"),
-            new ImagePair("Insect", "WordRecognition/bug.jpg"),
             new ImagePair("Kat", "WordRecognition/cat.jpg"),
             new ImagePair("Hond", "WordRecognition/dog.jpg"),
             new ImagePair("Vlieg", "WordRecognition/fly.jpg"),
@@ -42,19 +52,75 @@ namespace Dogware.Scenes.Minigames
 
         public WordRecognition() : base("WordRecognition", 3)
         {
-
+            
         }
 
         public override void InitScene()
         {
             base.InitScene();
 
-            MakeSceneObject(new WordDisplay(new Vector2(400, 500), "Lots of Words!"));
+            hasWon = false;
+            hasSelected = false;
+
+            arrow = (SelectionArrow)MakeSceneObject(new SelectionArrow(Vector2.One * -50));
+            arrow.transform.Rotation = MathHelper.ToRadians(-90);
+
+            blocks = new ImageBlock[amountsPerLevel[MainMenu.CurrentLevel]];
+
+            selectionIndex = (int)Math.Floor((float)amountsPerLevel[MainMenu.CurrentLevel] / 2);
+
+            int[] numbers = new int[amountsPerLevel[MainMenu.CurrentLevel]];
+
+            for (int i = 0; i < numbers.Length; i++)
+                numbers[i] = -1;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                bool accepted = false;
+
+                while(!accepted)
+                {
+                    numbers[i] = random.Next(pairs.Length);
+
+                    accepted = true;
+
+                    for(int e = 0; e < numbers.Length; e++)
+                    {
+                        if (numbers[e] == numbers[i] && e != i)
+                            accepted = false;
+                    }
+                }
+            }
+
+            CorrectAnswer = pairs[numbers[random.Next(numbers.Length)]].name;
+
+
+            for (int i = 0; i < numbers.Length; i++)
+                blocks[i] = (ImageBlock)MakeSceneObject(new ImageBlock(new Vector2(400 + ((-105 * (float)(numbers.Length / 2) + 105 * i)), 300), pairs[numbers[i]].imageName, pairs[numbers[i]].name));
+
+            display = (WordDisplay)MakeSceneObject(new WordDisplay(new Vector2(400, 500), "Lots of Words!"));
+            display.word = CorrectAnswer;
         }
 
         public override void Update()
         {
             base.Update();
+
+            if (Input.LeftPressed && !hasSelected)
+                selectionIndex--;
+
+            if (Input.RightPressed && !hasSelected)
+                selectionIndex++;
+
+            selectionIndex = Math.Min(Math.Max(selectionIndex, 0), blocks.Length - 1);
+
+            if(Input.ConfirmPressed && !hasSelected)
+            {
+                hasSelected = true;
+                hasWon = blocks[selectionIndex].Word.Equals(CorrectAnswer);
+            }
+
+            arrow.transform.Position = blocks[selectionIndex].transform.Position + new Vector2(0, 90);
         }
 
         public override bool HasWon()

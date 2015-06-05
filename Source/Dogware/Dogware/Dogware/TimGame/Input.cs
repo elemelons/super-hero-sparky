@@ -20,6 +20,86 @@ namespace TimGame
 
         private static KeyboardState keyboardState = Keyboard.GetState();
 
+        public static bool ConfirmPressed
+        {
+            get
+            {
+                return KeyPressed(Keys.Enter) || KeyPressed(Keys.Space);
+            }
+        }
+
+        public static bool ConfirmHeld
+        {
+            get
+            {
+                return KeyHeld(Keys.Enter) || KeyHeld(Keys.Space);
+            }
+        }
+        //
+        public static bool LeftPressed
+        {
+            get
+            {
+                return KeyPressed(Keys.Left) || KeyPressed(Keys.A);
+            }
+        }
+
+        public static bool LeftHeld
+        {
+            get
+            {
+                return KeyHeld(Keys.Left) || KeyHeld(Keys.A);
+            }
+        }
+        //
+        public static bool RightPressed
+        {
+            get
+            {
+                return KeyPressed(Keys.Right) || KeyPressed(Keys.D);
+            }
+        }
+
+        public static bool RightHeld
+        {
+            get
+            {
+                return KeyHeld(Keys.Right) || KeyHeld(Keys.D);
+            }
+        }
+        //
+        public static bool UpPressed
+        {
+            get
+            {
+                return KeyPressed(Keys.Up) || KeyPressed(Keys.W);
+            }
+        }
+
+        public static bool UpHeld
+        {
+            get
+            {
+                return KeyHeld(Keys.Up) || KeyHeld(Keys.W);
+            }
+        }
+        //
+        public static bool DownPressed
+        {
+            get
+            {
+                return KeyPressed(Keys.Down) || KeyPressed(Keys.S);
+            }
+        }
+
+        public static bool DownHeld
+        {
+            get
+            {
+                return KeyHeld(Keys.Down) || KeyHeld(Keys.S);
+            }
+        }
+
         public static void UpdateState()
         {
             keyboardState = Keyboard.GetState();

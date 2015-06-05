@@ -9,7 +9,7 @@ namespace Dogware.Objects.WordRecognition
 {
     class WordDisplay : GameObject
     {
-        private string word;
+        public string word;
         private float scale = 0.5f;
 
         public WordDisplay(Vector2 position, string word) : base("WordDisplay", true, position, "none")

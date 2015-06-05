@@ -50,6 +50,7 @@
     <Compile Include="Objects\TestMinigame\MovingActivatedBall.cs" />
     <Compile Include="Objects\TestMinigame\TargetBall.cs" />
     <Compile Include="Objects\WalkingDog.cs" />
+    <Compile Include="Objects\WordRecognition\ImageBlock.cs" />
     <Compile Include="Objects\WordRecognition\WordDisplay.cs" />
     <Compile Include="Scenes\IntroSplash.cs" />
     <Compile Include="Scenes\LevelScene.cs" />
