@@ -18,6 +18,7 @@ namespace TimGame
             "ball.png",
             "tinyBall.png",
             "SelectionArrow.png",
+            "SelectionArrow.png",
             "WordRecognition/bat.jpg",
             "WordRecognition/bug.jpg",
             "WordRecognition/cat.jpg",
@@ -27,7 +28,9 @@ namespace TimGame
             "WordRecognition/monkey.jpg",
             "WordRecognition/mouse.jpg",
             "WordRecognition/solaire.jpg",
-            "WordRecognition/spider.jpg"
+            "WordRecognition/spider.jpg",
+            "SelectionArrow.png",
+            "NewFolder1/baseball.jpg"
         };
         
         public void Start()
