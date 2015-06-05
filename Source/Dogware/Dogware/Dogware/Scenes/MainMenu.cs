@@ -15,6 +15,8 @@ namespace Dogware.Scenes
         private int selectionIndex = 0;
         private WalkingDog dog;
 
+        public static int CurrentLevel = 0;
+
         private Vector2[] levelOrbPositions = new Vector2[]
         {
             new Vector2(200, 500),

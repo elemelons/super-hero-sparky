@@ -20,6 +20,7 @@ namespace Dogware.Objects
         public override void OnButtonClick()
         {
             TGame.Instance.LoadScene(new LevelScene(levelToStart));
+            MainMenu.CurrentLevel = levelToStart;
         }
     }
 }
