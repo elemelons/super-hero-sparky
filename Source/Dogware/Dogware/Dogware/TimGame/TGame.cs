@@ -1,6 +1,7 @@
 ﻿using Dogware;
 using Dogware.Scenes;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace TimGame
     {
         public static TGame Instance { get; private set; }
         private Scene activeScene;
+
+        public SpriteFont MainFont;
 
         public static string[] SpriteNames = new string[]
         {
@@ -29,8 +32,7 @@ namespace TimGame
             "WordRecognition/mouse.jpg",
             "WordRecognition/solaire.jpg",
             "WordRecognition/spider.jpg",
-            "SelectionArrow.png",
-            "NewFolder1/baseball.jpg"
+            "SelectionArrow.png"
         };
         
         public void Start()

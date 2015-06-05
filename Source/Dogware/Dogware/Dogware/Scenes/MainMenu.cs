@@ -12,7 +12,7 @@ namespace Dogware.Scenes
     {
         private List<Button> buttons = new List<Button>();
         private SelectionArrow arrow;
-        private int selectionIndex = 0;
+        private int selectionIndex = 1;
         private WalkingDog dog;
 
         public static int CurrentLevel = 0;
@@ -60,11 +60,12 @@ namespace Dogware.Scenes
 
             dog = (WalkingDog)MakeSceneObject(new WalkingDog(levelOrbPositions[0]));
 
+            buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(400, 550))));
             buttons.Add((Button)MakeSceneObject(new PlayButton(0, levelOrbPositions[0])));
             buttons.Add((Button)MakeSceneObject(new PlayButton(1, levelOrbPositions[1])));
             buttons.Add((Button)MakeSceneObject(new PlayButton(2, levelOrbPositions[2])));
 
-            buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(50, 200))));
+            
         }
     }
 }

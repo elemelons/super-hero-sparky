@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dogware.Objects.WordRecognition;
+using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +48,8 @@ namespace Dogware.Scenes.Minigames
         public override void InitScene()
         {
             base.InitScene();
+
+            MakeSceneObject(new WordDisplay(Vector2.Zero, ""));
         }
 
         public override void Update()

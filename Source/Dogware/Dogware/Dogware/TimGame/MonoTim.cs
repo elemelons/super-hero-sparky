@@ -92,14 +92,17 @@ namespace TimGame
         {
             foreach (GameObject toUpdate in GameObject.AllObjects)
             {
-                toUpdate.Draw(spriteBatch);
+                if(toUpdate.Active)
+                    toUpdate.Draw(spriteBatch);
             }
         }
 
         public void Load(SpriteBatch batch)
         {
             spriteBatch = batch;
-            
+
+            TGame.Instance.MainFont = baseGame.Content.Load<SpriteFont>("FunSized");
+
             foreach(string toLoad in TGame.SpriteNames)
             {
                 spriteLoader.Load(spriteBatch, toLoad);

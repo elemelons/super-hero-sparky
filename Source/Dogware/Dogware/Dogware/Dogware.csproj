@@ -50,12 +50,14 @@
     <Compile Include="Objects\TestMinigame\MovingActivatedBall.cs" />
     <Compile Include="Objects\TestMinigame\TargetBall.cs" />
     <Compile Include="Objects\WalkingDog.cs" />
+    <Compile Include="Objects\WordRecognition\WordDisplay.cs" />
     <Compile Include="Scenes\IntroSplash.cs" />
     <Compile Include="Scenes\LevelScene.cs" />
     <Compile Include="Scenes\Minigames\MinigameBase.cs" />
     <Compile Include="Scenes\Minigames\MinigameServer.cs" />
     <Compile Include="Scenes\Minigames\TestGame.cs" />
     <Compile Include="Scenes\Minigames\TestGame2.cs" />
+    <Compile Include="Scenes\Minigames\WordRecognition.cs" />
     <Compile Include="TimGame\Renderer.cs" />
     <Compile Include="TimGame\Scene.cs" />
     <Compile Include="Program.cs" />
@@ -120,7 +122,12 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\CanGame\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\FunSized.spritefont" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

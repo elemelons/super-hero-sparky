@@ -14,17 +14,18 @@ namespace Dogware.Scenes.Minigames
         {
             new LevelGroup(new MinigameBase[]
                 {
-                    new tincans()
+                    new WordRecognition()
                 }),
 
             new LevelGroup(new MinigameBase[]
                 {
-                    new tincans()
+                    new TestGame(),
+                    new TestGame2()
                 }),
 
             new LevelGroup(new MinigameBase[]
                 {
-                    new tincans()
+                    new TestGame2()
                 })
         };
 
