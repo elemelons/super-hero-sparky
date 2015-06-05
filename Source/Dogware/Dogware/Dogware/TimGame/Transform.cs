@@ -36,6 +36,7 @@ namespace TimGame
 
             set
             {
+                value.Normalize();
                 rotation = MathHelper.ToRadians(((float)Math.Atan2(value.Y, value.X) * 180 / (float)Math.PI) + 90);
             }
         }

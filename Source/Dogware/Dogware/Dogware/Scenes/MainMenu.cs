@@ -13,6 +13,14 @@ namespace Dogware.Scenes
         private List<Button> buttons = new List<Button>();
         private SelectionArrow arrow;
         private int selectionIndex = 0;
+        private WalkingDog dog;
+
+        private Vector2[] levelOrbPositions = new Vector2[]
+        {
+            new Vector2(200, 500),
+            new Vector2(600, 400),
+            new Vector2(300, 250)
+        };
 
         public MainMenu() : base("Main Menu")
         {
@@ -21,7 +29,7 @@ namespace Dogware.Scenes
 
         public override void Update()
         {
-            if(Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Down))
+            if(Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Up))
             {
                 selectionIndex++;
 
@@ -29,7 +37,7 @@ namespace Dogware.Scenes
                     selectionIndex = buttons.Count - 1;
             }
 
-            if (Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Up))
+            if (Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Down))
             {
                 selectionIndex--;
 
@@ -38,6 +46,7 @@ namespace Dogware.Scenes
             }
 
             arrow.transform.Position = new Vector2(buttons[selectionIndex].transform.Position.X - 32, buttons[selectionIndex].transform.Position.Y);
+            dog.MoveTo(buttons[selectionIndex].transform.Position);
 
             if (Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Enter))
                 buttons[selectionIndex].OnButtonClick();
@@ -47,9 +56,11 @@ namespace Dogware.Scenes
         {
             arrow = (SelectionArrow)MakeSceneObject(new SelectionArrow(new Vector2(10, 50)));
 
-            buttons.Add((Button)MakeSceneObject(new PlayButton(0, new Vector2(50, 50))));
-            buttons.Add((Button)MakeSceneObject(new PlayButton(1, new Vector2(50, 100))));
-            buttons.Add((Button)MakeSceneObject(new PlayButton(2, new Vector2(50, 150))));
+            dog = (WalkingDog)MakeSceneObject(new WalkingDog(levelOrbPositions[0]));
+
+            buttons.Add((Button)MakeSceneObject(new PlayButton(0, levelOrbPositions[0])));
+            buttons.Add((Button)MakeSceneObject(new PlayButton(1, levelOrbPositions[1])));
+            buttons.Add((Button)MakeSceneObject(new PlayButton(2, levelOrbPositions[2])));
 
             buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(50, 200))));
         }
