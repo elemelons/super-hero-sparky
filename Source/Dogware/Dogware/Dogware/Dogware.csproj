@@ -40,6 +40,10 @@
   <ItemGroup>
     <Compile Include="Game1.cs" />
     <Compile Include="Objects\Button.cs" />
+    <Compile Include="Objects\CanGame\ball.cs" />
+    <Compile Include="Objects\CanGame\TinCan.cs" />
+    <Compile Include="Objects\GarbageDodging\Obstacle.cs" />
+    <Compile Include="Objects\GarbageDodging\RunningDog.cs" />
     <Compile Include="Objects\LevelSceneObjects\MinigameTimeIndicator.cs" />
     <Compile Include="Objects\LevelSceneObjects\PointIndicator.cs" />
     <Compile Include="Objects\QuitButton.cs" />
@@ -54,10 +58,12 @@
     <Compile Include="Objects\WordRecognition\WordDisplay.cs" />
     <Compile Include="Scenes\IntroSplash.cs" />
     <Compile Include="Scenes\LevelScene.cs" />
+    <Compile Include="Scenes\Minigames\GarbageDodging.cs" />
     <Compile Include="Scenes\Minigames\MinigameBase.cs" />
     <Compile Include="Scenes\Minigames\MinigameServer.cs" />
     <Compile Include="Scenes\Minigames\TestGame.cs" />
     <Compile Include="Scenes\Minigames\TestGame2.cs" />
+    <Compile Include="Scenes\Minigames\tincans.cs" />
     <Compile Include="Scenes\Minigames\WordRecognition.cs" />
     <Compile Include="TimGame\Renderer.cs" />
     <Compile Include="TimGame\Scene.cs" />
@@ -82,6 +88,12 @@
     <Content Include="Content\ball.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\CanGame\baseball.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\CanGame\tincan.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\SelectionArrow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -89,9 +101,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\WordRecognition\bat.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\WordRecognition\bug.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\WordRecognition\cat.jpg">
@@ -123,9 +132,7 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\CanGame\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Content\FunSized.spritefont" />
   </ItemGroup>

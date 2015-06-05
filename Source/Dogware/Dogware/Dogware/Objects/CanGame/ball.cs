@@ -8,11 +8,11 @@ using TimGame;
 
 namespace Dogware.Objects.tin_cans
 {
-    class ball : GameObject
+    class Ball : GameObject
     {
         public Vector2 Velocity = new Vector2(12, 0);
         private bool thrown = false;
-        public ball(Vector2 position) : base("ball", false, position, "NewFolder1/baseball.png")
+        public Ball(Vector2 position) : base("ball", false, position, "CanGame/baseball.png")
         {
 
         }

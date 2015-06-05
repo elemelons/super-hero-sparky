@@ -7,18 +7,19 @@ using System.Text;
 
 namespace Dogware.Scenes.Minigames
 {
-    class tincans : MinigameBase
+    class TinCans : MinigameBase
     {
-        new ball baseball;
-        new TinCan can;
+        private Ball baseball;
+        private TinCan can;
         private bool correctCanHit = false;
+
         public struct SumData
         {
             public string sum;
             public string answer;
         }
 
-        public tincans() : base("Tin Cans", 6)
+        public TinCans() : base("Tin Cans", 6)
         {
 
         }
@@ -26,7 +27,7 @@ namespace Dogware.Scenes.Minigames
         public override void InitScene()
         {
             base.InitScene();
-            baseball = (ball)MakeSceneObject(new ball(new Vector2(100, 450)));
+            baseball = (Ball)MakeSceneObject(new Ball(new Vector2(100, 450)));
             can = (TinCan)MakeSceneObject(new TinCan(new Vector2(100, 100)));
         }
 

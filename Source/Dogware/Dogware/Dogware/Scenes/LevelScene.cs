@@ -81,7 +81,7 @@ namespace Dogware.Scenes
             {
                 currentGame.Update();
 
-                if (currentGame.HasWon())
+                if (currentGame.GameCompleted())
                     currentGame.ReduceTime();
 
                 if (currentGame.GameEnded())

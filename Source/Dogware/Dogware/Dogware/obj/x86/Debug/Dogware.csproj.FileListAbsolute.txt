@@ -58,7 +58,6 @@ C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\W
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\SelectionArrow.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\tinyBall.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\bat.jpg
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\bug.jpg
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\cat.jpg
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\dog.jpg
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\fly.jpg
@@ -93,3 +92,5 @@ C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.exe
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.pdb
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\FunSized.xnb
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\baseball.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\tincan.jpg

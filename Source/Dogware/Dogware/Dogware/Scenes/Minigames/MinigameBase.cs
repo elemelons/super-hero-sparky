@@ -8,8 +8,8 @@ namespace Dogware.Scenes.Minigames
 {
     public abstract class MinigameBase : Scene
     {
-        private float time = 0;
-        private float initialTime = 0;
+        protected float time = 0;
+        protected float initialTime = 0;
 
         public float TimeRemainingAsPercentage
         {
@@ -46,6 +46,11 @@ namespace Dogware.Scenes.Minigames
         public bool GameEnded()
         {
             return time < 0;
+        }
+
+        public virtual bool GameCompleted()
+        {
+            return HasWon();
         }
 
         public abstract bool HasWon();

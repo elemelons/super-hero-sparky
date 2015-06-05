@@ -26,7 +26,7 @@ namespace Dogware.Scenes
 
         public MainMenu() : base("Main Menu")
         {
-
+            selectionIndex = CurrentLevel + 1;
         }
 
         public override void Update()

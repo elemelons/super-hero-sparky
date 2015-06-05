@@ -13,7 +13,7 @@ namespace Dogware.Objects.tin_cans
         private float timer = 1;
         public bool Hit;
 
-        public TinCan(Vector2 position) : base("can", false, position, "NewFolder1/tincan.jpg")
+        public TinCan(Vector2 position) : base("can", false, position, "CanGame/tincan.jpg")
         {
             renderer.Scale = 0.20f;
         }
