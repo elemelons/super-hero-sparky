@@ -31,7 +31,7 @@ namespace Dogware.Scenes.Minigames
             time = initialTime;
         }
 
-        public override bool HasWon()
+        public override bool HasWon()//test
         {
             return !dog.HitGarbage;
         }
