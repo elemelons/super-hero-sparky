@@ -123,6 +123,11 @@ namespace Dogware.Scenes.Minigames
             arrow.transform.Position = blocks[selectionIndex].transform.Position + new Vector2(0, 90);
         }
 
+        public override string GetObjective()
+        {
+            return "Kies het juiste plaatje!";
+        }
+
         public override bool HasWon()
         {
             return hasWon;

@@ -14,6 +14,7 @@ namespace TimGame
         private string textureName;
         private int cols, rows;
         public float Scale = 1;
+        public Color BlendColor = Color.White;
 
         public int Frames
         {
@@ -107,7 +108,7 @@ namespace TimGame
                     origin.Y = (float)height / 2;
                 }
 
-                batch.Draw(Texture, owner.transform.Position, sourceRect, Color.White, owner.transform.Rotation, origin, Scale, SpriteEffects.None, 0);
+                batch.Draw(Texture, owner.transform.Position, sourceRect, BlendColor, owner.transform.Rotation, origin, Scale, SpriteEffects.None, 0);
                 //batch.Draw(Texture, owner.transform.Position, null, Color.White, owner.transform.Rotation, origin, 1, SpriteEffects.None, 0);
             }
             else

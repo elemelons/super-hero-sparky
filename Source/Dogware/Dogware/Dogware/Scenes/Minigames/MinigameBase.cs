@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dogware.Objects;
+using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,7 @@ namespace Dogware.Scenes.Minigames
     {
         protected float time = 0;
         protected float initialTime = 0;
+        private string objective = "Undefined Objective!";
 
         public float TimeRemainingAsPercentage
         {
@@ -28,6 +31,9 @@ namespace Dogware.Scenes.Minigames
         public override void InitScene()
         {
             time = initialTime;
+
+            GameObject obj = MakeSceneObject(new TextObject(new Vector2(400, 50), GetObjective(), 0.5f));
+            obj.DrawDepth = 5;
         }
 
         public override void Update()
@@ -53,6 +59,7 @@ namespace Dogware.Scenes.Minigames
             return HasWon();
         }
 
+        public abstract string GetObjective();
         public abstract bool HasWon();
     }
 }

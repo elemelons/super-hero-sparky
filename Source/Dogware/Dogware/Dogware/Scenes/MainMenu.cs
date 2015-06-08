@@ -31,7 +31,7 @@ namespace Dogware.Scenes
 
         public override void Update()
         {
-            if(Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Up))
+            if(Input.UpPressed)
             {
                 selectionIndex++;
 
@@ -39,7 +39,7 @@ namespace Dogware.Scenes
                     selectionIndex = buttons.Count - 1;
             }
 
-            if (Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Down))
+            if (Input.DownPressed)
             {
                 selectionIndex--;
 
@@ -50,7 +50,7 @@ namespace Dogware.Scenes
             arrow.transform.Position = new Vector2(buttons[selectionIndex].transform.Position.X - 32, buttons[selectionIndex].transform.Position.Y);
             dog.MoveTo(buttons[selectionIndex].transform.Position);
 
-            if (Input.KeyPressed(Microsoft.Xna.Framework.Input.Keys.Enter))
+            if (Input.ConfirmPressed)
                 buttons[selectionIndex].OnButtonClick();
         }
 
@@ -61,9 +61,9 @@ namespace Dogware.Scenes
             dog = (WalkingDog)MakeSceneObject(new WalkingDog(levelOrbPositions[0]));
 
             buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(400, 550))));
-            buttons.Add((Button)MakeSceneObject(new PlayButton(0, levelOrbPositions[0])));
-            buttons.Add((Button)MakeSceneObject(new PlayButton(1, levelOrbPositions[1])));
-            buttons.Add((Button)MakeSceneObject(new PlayButton(2, levelOrbPositions[2])));
+            buttons.Add((Button)MakeSceneObject(new LevelOrb(0, levelOrbPositions[0])));
+            buttons.Add((Button)MakeSceneObject(new LevelOrb(1, levelOrbPositions[1])));
+            buttons.Add((Button)MakeSceneObject(new LevelOrb(2, levelOrbPositions[2])));
 
             
         }

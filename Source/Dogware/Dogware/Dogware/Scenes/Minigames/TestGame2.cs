@@ -24,6 +24,11 @@ namespace Dogware.Scenes.Minigames
 
         }
 
+        public override string GetObjective()
+        {
+            return "Raak het doelwit!";
+        }
+
         public override bool HasWon()
         {
             return target.gravityToggled;

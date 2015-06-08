@@ -12,9 +12,11 @@ namespace TimGame
         public class RendererOptions
         {
             public int cols, rows, index;
+            public Color color;
 
-            public RendererOptions(int cols, int rows, int startIndex = 0)
+            public RendererOptions(Color color, int cols = 1, int rows = 1, int startIndex = 0)
             {
+                this.color = color;
                 this.cols = cols;
                 this.rows = rows;
                 index = startIndex;
@@ -78,6 +80,7 @@ namespace TimGame
 
             if (rendererOptions != null)
             {
+                renderer.BlendColor = rendererOptions.color;
                 cols = rendererOptions.cols;
                 rows = rendererOptions.rows;
                 index = rendererOptions.index;

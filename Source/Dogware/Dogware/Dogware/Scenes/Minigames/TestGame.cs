@@ -28,6 +28,11 @@ namespace Dogware.Scenes.Minigames
             base.Update();
         }
 
+        public override string GetObjective()
+        {
+            return "Druk op spatie!";
+        }
+
         public override bool HasWon()
         {
             return ball.Activated;

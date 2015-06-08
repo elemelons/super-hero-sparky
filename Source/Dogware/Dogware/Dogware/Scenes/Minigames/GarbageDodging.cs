@@ -36,6 +36,11 @@ namespace Dogware.Scenes.Minigames
             return !dog.HitGarbage;
         }
 
+        public override string GetObjective()
+        {
+            return "Ontwijk!";
+        }
+
         public override bool GameCompleted()
         {
             return !HasWon();

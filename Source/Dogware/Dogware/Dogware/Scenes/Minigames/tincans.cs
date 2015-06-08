@@ -41,6 +41,11 @@ namespace Dogware.Scenes.Minigames
             //}
         }
 
+        public override string GetObjective()
+        {
+            return "Raak het juiste blikje!";
+        }
+
         public override bool HasWon()
         {
             return correctCanHit;

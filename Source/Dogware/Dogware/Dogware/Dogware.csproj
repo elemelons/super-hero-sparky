@@ -47,12 +47,13 @@
     <Compile Include="Objects\LevelSceneObjects\MinigameTimeIndicator.cs" />
     <Compile Include="Objects\LevelSceneObjects\PointIndicator.cs" />
     <Compile Include="Objects\QuitButton.cs" />
-    <Compile Include="Objects\PlayButton.cs" />
+    <Compile Include="Objects\LevelOrb.cs" />
     <Compile Include="Objects\SelectionArrow.cs" />
     <Compile Include="Objects\SplashLogo.cs" />
     <Compile Include="Objects\TestMinigame\ActivatedBall.cs" />
     <Compile Include="Objects\TestMinigame\MovingActivatedBall.cs" />
     <Compile Include="Objects\TestMinigame\TargetBall.cs" />
+    <Compile Include="Objects\TextObject.cs" />
     <Compile Include="Objects\WalkingDog.cs" />
     <Compile Include="Objects\WordRecognition\ImageBlock.cs" />
     <Compile Include="Objects\WordRecognition\WordDisplay.cs" />

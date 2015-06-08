@@ -24,6 +24,8 @@ namespace Dogware.Scenes
 
         private int indicatorAmount = 0;
 
+        public static bool[] LevelStatus = new bool[100];
+
         public LevelScene(int currentLevel) : base("LevelScene")
         {
             this.currentLevel = currentLevel;
@@ -42,6 +44,7 @@ namespace Dogware.Scenes
                 {
                     if (gamesWon >= winsNeeded)
                     {
+                        LevelStatus[currentLevel] = true;
                         TGame.Instance.LoadScene(new MainMenu());
                     }
                     else
@@ -57,7 +60,6 @@ namespace Dogware.Scenes
 
                         timeIndicator.Active = true;
                         timeIndicator.gameToTrack = currentGame;
-
                     }
                 }
                 else

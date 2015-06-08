@@ -8,11 +8,11 @@ using TimGame;
 
 namespace Dogware.Objects
 {
-    class PlayButton : Button
+    class LevelOrb : Button
     {
         private int levelToStart = 0;
 
-        public PlayButton(int level, Vector2 position) : base("Play", position, "ball.png")
+        public LevelOrb(int level, Vector2 position) : base("Play", position, "ball.png", new RendererOptions(LevelScene.LevelStatus[level]? Color.Green : Color.Red))
         {
             levelToStart = level;
         }
