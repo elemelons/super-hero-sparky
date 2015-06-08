@@ -12,7 +12,6 @@ namespace Dogware.Scenes.Minigames
     {
         protected float time = 0;
         protected float initialTime = 0;
-        private string objective = "Undefined Objective!";
 
         public float TimeRemainingAsPercentage
         {
