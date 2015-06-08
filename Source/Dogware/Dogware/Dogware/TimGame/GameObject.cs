@@ -57,7 +57,7 @@ namespace TimGame
         {
             get
             {
-                return new Rectangle((int)transform.Position.X, (int)transform.Position.Y, (int)renderer.TextureWidth, (int)renderer.TextureHeight);
+                return new Rectangle((int)transform.Position.X - (int)(renderer.TextureWidth / 2), (int)transform.Position.Y - (int)(renderer.TextureHeight / 2), (int)renderer.TextureWidth, (int)renderer.TextureHeight);
             }
         }
 
@@ -123,8 +123,27 @@ namespace TimGame
 
         public virtual void Draw(SpriteBatch batch)
         {
-            if(Active)
+            if (Active)
+            {
                 renderer.Draw(batch);
+                
+                /*
+                if(debugBoundsTestTexture != null)
+                {
+                    Vector2[] positions = new Vector2[4]
+                    {
+                        new Vector2(Bounds.X, Bounds.Y),
+                        new Vector2(Bounds.X + Bounds.Width, Bounds.Y),
+                        new Vector2(Bounds.X, Bounds.Y + Bounds.Height),
+                        new Vector2(Bounds.X + Bounds.Width, Bounds.Y + Bounds.Height)
+                    };
+
+                    for (int i = 0; i < 4; i++)
+                    {
+                        batch.Draw(SpriteLoader.Instance.GetSprite("tinyBall.png"), positions[i] + new Vector2(-debugBoundsTestTexture.Width / 2, -debugBoundsTestTexture.Height / 2), Color.White);
+                    }
+                }*/
+            }
         }
 
         public void UpdateObject()
@@ -139,7 +158,7 @@ namespace TimGame
 
         public static void SortObjects()
         {
-            AllObjects = AllObjects.OrderBy(o => o.DrawDepth).ToList();
+            AllObjects = AllObjects.OrderByDescending(o => o.DrawDepth).ToList();
         }
 
         public virtual void Update() { }

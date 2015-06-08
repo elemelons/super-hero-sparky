@@ -108,7 +108,7 @@ namespace TimGame
                     origin.Y = (float)height / 2;
                 }
 
-                batch.Draw(Texture, owner.transform.Position, sourceRect, BlendColor, owner.transform.Rotation, origin, Scale, SpriteEffects.None, owner.DrawDepth);
+                batch.Draw(Texture, owner.transform.Position, sourceRect, BlendColor, owner.transform.Rotation, origin, Scale, SpriteEffects.None, 0);
                 //batch.Draw(Texture, owner.transform.Position, null, Color.White, owner.transform.Rotation, origin, 1, SpriteEffects.None, 0);
             }
             else

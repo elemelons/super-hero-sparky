@@ -13,6 +13,8 @@ namespace TimGame
         private Vector2 lastLocalPos;
         private float lastLocalRot;
 
+        private bool debugLocalPosSet = false;
+
         public Transform(GameObject owner)
         {
             this.owner = owner;
@@ -80,6 +82,9 @@ namespace TimGame
                     return position;
                 else
                 { //TODO: GET doesn't work properly yet
+
+                    if (!debugLocalPosSet)
+                        LocalPosition = Position - owner.Parent.transform.Position; //TODO: Actually properly do this
 
                     return lastLocalPos; //might return (0,0) or null when setter has not yet been used.
 

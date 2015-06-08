@@ -84,14 +84,17 @@ namespace TimGame
             GameObject.AllObjects.AddRange(GameObject.NewObjects);
             GameObject.NewObjects.RemoveAll(o => true);
             GameObject.AllObjects.RemoveAll(o => o.destroyed);
+            GameObject.SortObjects();
 
             game.Update();
         }
 
         public void Draw()
         {
-            foreach (GameObject toUpdate in GameObject.AllObjects)
+            for(int i = 0; i < GameObject.AllObjects.Count; i++)
             {
+                GameObject toUpdate = GameObject.AllObjects[i];
+
                 if(toUpdate.Active)
                     toUpdate.Draw(spriteBatch);
             }

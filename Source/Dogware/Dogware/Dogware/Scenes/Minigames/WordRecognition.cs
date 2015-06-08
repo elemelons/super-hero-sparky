@@ -15,7 +15,7 @@ namespace Dogware.Scenes.Minigames
         private bool hasSelected = false;
         private bool hasWon;
         private string CorrectAnswer;
-        Random random = new Random();
+        System.Random random = new System.Random();
         private ImageBlock[] blocks;
         WordDisplay display;
 

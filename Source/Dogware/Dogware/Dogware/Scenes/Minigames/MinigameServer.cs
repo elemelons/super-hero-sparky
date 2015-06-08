@@ -8,29 +8,29 @@ namespace Dogware.Scenes.Minigames
 {
     public static class MinigameServer
     {
-        private static Random random = new Random();
+        private static System.Random random = new System.Random();
 
         private static LevelGroup[] groups = new LevelGroup[]
         {
             new LevelGroup(new MinigameBase[]
                 {
-                    new WordRecognition(),
+                    new Darts(),
                     //new TinCans(),
-                    new GarbageDodging()
+                    //new GarbageDodging()
                 }),
 
             new LevelGroup(new MinigameBase[]
                 {
-                    new WordRecognition(),
+                    new Darts(),
                     //new TinCans(),
-                    new GarbageDodging()
+                    //new GarbageDodging()
                 }),
 
             new LevelGroup(new MinigameBase[]
                 {
-                    new WordRecognition(),
+                    new Darts(),
                     //new TinCans(),
-                    new GarbageDodging()
+                    //new GarbageDodging()
                 })
         };
 

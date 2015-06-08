@@ -9,7 +9,7 @@ namespace Dogware.Objects.GarbageDodging
 {
     class Obstacle : GameObject
     {
-        private static Random random = new Random();
+        private static System.Random random = new System.Random();
         public static bool move = true;
         private float moveSpeed = 4;
 
