@@ -114,6 +114,11 @@ namespace TimGame
         {
             destroyed = true;
             OnDestroy();
+
+            List<GameObject> children = GameObject.AllObjects.FindAll(o => o.Parent == this);
+
+            foreach (GameObject child in children)
+                child.Destroy();
         }
 
         public virtual void Draw(SpriteBatch batch)
