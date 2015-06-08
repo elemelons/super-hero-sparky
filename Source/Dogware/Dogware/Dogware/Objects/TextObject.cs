@@ -10,8 +10,9 @@ namespace Dogware.Objects
     class TextObject : GameObject
     {
         public string Text;
-        public float Scale = 0.5f;
+        public float Scale = 1f;
 
+        public TextObject() : base("TextObject", true, Vector2.Zero, "none", new RendererOptions(Color.Black)) { }
         public TextObject(Vector2 position, string text, float scale = 1, RendererOptions options = null) : base("TextObject", true, position, "none", options == null? new RendererOptions(Color.Black) : options)
         {
             Text = text;
