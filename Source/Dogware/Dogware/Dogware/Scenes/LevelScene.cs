@@ -34,6 +34,7 @@ namespace Dogware.Scenes
         public override void InitScene()
         {
             timeIndicator = new MinigameTimeIndicator();
+            timeIndicator.DrawDepth = -2000;
         }
 
         public override void Update()

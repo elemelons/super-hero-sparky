@@ -1,4 +1,5 @@
-﻿using Dogware.Scenes.Minigames;
+﻿using Dogware.Scenes;
+using Dogware.Scenes.Minigames;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,8 @@ namespace Dogware.Objects.LevelSceneObjects
         public override void Update()
         {
             base.Update();
+
+            renderer.BlendColor = MainMenu.LevelColors[MainMenu.CurrentLevel];
 
             if(gameToTrack != null)
                 transform.Position = new Vector2(30 +  740 * gameToTrack.TimeRemainingAsPercentage, 570);

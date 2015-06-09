@@ -19,9 +19,9 @@ namespace Dogware.Scenes
 
         public static Color[] LevelColors = new Color[]
         {
-            new Color(0, 50, 0),
-            new Color(0, 0, 50),
-            new Color(50, 0, 0)
+            new Color(0, 150, 0),
+            new Color(0, 0, 150),
+            new Color(150, 0, 0)
         };
 
         private Vector2[] levelOrbPositions = new Vector2[]

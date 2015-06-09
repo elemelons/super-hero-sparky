@@ -32,9 +32,6 @@ namespace TimGame
             "WordRecognition/solaire.jpg",
             "WordRecognition/spider.jpg",
             "SelectionArrow.png",
-            "CanGame/tincan.jpg",        
-            "CanGame/baseball.png",
-            "CanGame/tincan.jpg",
             "Geography/friesland.png",
             "Geography/limburg.png",
             "Geography/overijssel.png",
@@ -49,7 +46,8 @@ namespace TimGame
             "Geography/oceanie.png",
             "CanGame/ball.png",
             "CanGame/Blikje.png",
-            "CanGame/Blikjes achtergrond.png"
+            "CanGame/Blikjes achtergrond.png",
+            "MinigameFrame.png"
         };
         
         public void Start()

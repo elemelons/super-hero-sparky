@@ -28,14 +28,12 @@ namespace Dogware.Objects.tin_cans
                 Velocity.X *= -1;
             }
 
-            if (thrown == false && Keyboard.GetState().IsKeyDown(Keys.Space))
+            if (thrown == false && Input.ConfirmPressed)
             {
                 thrown = true;
                 Velocity = new Vector2(0, -7);
-                
             }
             
-
             base.Update();
         }
 

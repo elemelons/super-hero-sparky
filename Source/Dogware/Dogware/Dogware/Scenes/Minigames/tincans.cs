@@ -54,7 +54,7 @@ namespace Dogware.Scenes.Minigames
             List<int> positions = new int[]{1, 2, 3, 4, 5, 6}.ToList();
             positions = positions.OrderBy(o => TimGame.Random.Value).ToList();
 
-            MakeSceneObject(new Background("Frame voor achter minigames.png"));
+            //MakeSceneObject(new Background("CanGame/Blikjes achtergrond.png"));
 
             can = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[0]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[0]));
             can1 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[1]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[1]));
