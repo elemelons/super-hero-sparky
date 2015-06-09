@@ -15,22 +15,23 @@ namespace Dogware.Scenes.Minigames
         public List<int> hitValues;
         private TargetData currentScenario;
         private TextObject currTotal;
+        private TextObject thrownTotal;
 
         private List<Arrow> arrows = new List<Arrow>();
 
         private TargetData[] scenarios = new TargetData[]
         {
-            new TargetData(3, 5, 5, 0, new int[]{1, 2, 2, 4, 3}),
-            new TargetData(2, 6, 4, 0, new int[]{2, 2, 1, 5, 4, 2}),
-            new TargetData(4, 5, 10, 0, new int[]{2, 2, 3, 3, 6}),
+            new TargetData(5, 5, 0, new int[]{1, 2, 2, 4, 3}),
+            new TargetData(6, 4, 0, new int[]{2, 2, 1, 5, 4, 2}),
+            new TargetData(5, 10, 0, new int[]{2, 2, 3, 3, 6}),
 
-            new TargetData(3, 5, 20, 1, new int[]{5, 10, 5, 2, 8}),
-            new TargetData(5, 7, 15, 1, new int[]{2, 5, 3, 4, 5, 2, 3}),
-            new TargetData(2, 10, 30, 1, new int[]{15, 15, 10, 20, 25, 5, 1, 4, 7, 9}),
+            new TargetData(5, 20, 1, new int[]{5, 10, 5, 2, 8}),
+            new TargetData(7, 15, 1, new int[]{2, 5, 3, 4, 5, 2, 3}),
+            new TargetData(10, 30, 1, new int[]{15, 15, 10, 20, 25, 5, 1, 4, 7, 9}),
 
-            new TargetData(5, 10, 50, 2, new int[]{20, 10, 10, 5, 5, 20, 8, 4, 3, 2}),
-            new TargetData(5, 10, 100, 2, new int[]{40, 20, 10, 20, 10, 5, 5, 3, 9, 6}),
-            new TargetData(3, 15, 80, 2, new int[]{40, 30, 10, 5, 5, 8, 4, 5, 2, 3})
+            new TargetData(10, 50, 2, new int[]{20, 10, 10, 5, 5, 20, 8, 4, 3, 2}),
+            new TargetData(10, 100, 2, new int[]{40, 20, 10, 20, 10, 5, 5, 3, 9, 6}),
+            new TargetData(10, 80, 2, new int[]{40, 30, 10, 5, 5, 8, 4, 5, 2, 3})
         };
 
         public Darts() : base("Darts", 7)
@@ -58,7 +59,7 @@ namespace Dogware.Scenes.Minigames
 
             xAim = 400;
             hitValues = new List<int>();
-            scenarios = scenarios.OrderBy(o => (o.arrows / o.arrows) * random.Next(100)).ToArray();
+            scenarios = scenarios.OrderBy(o => (o.targets / o.targets) * random.Next(100)).ToArray();
 
             TargetData data = scenarios.First(o => o.difficulty == MainMenu.CurrentLevel);
             currentScenario = data;
@@ -67,7 +68,7 @@ namespace Dogware.Scenes.Minigames
 
             arrows = new List<Arrow>();
 
-            for (int i = 0; i < data.arrows; i++)
+            for (int i = 0; i < 5; i++)
             {
                 float xP = 400 + (50 * i);
 
@@ -80,7 +81,7 @@ namespace Dogware.Scenes.Minigames
                 MakeSceneObject(new Target(new Vector2(xP, 100), (TextObject)MakeSceneObject(new TextObject()), data.targetValues[i]));
             }
 
-            MakeSceneObject(new TextObject(new Vector2(700, 500), data.totalSum.ToString()));
+            thrownTotal = (TextObject)MakeSceneObject(new TextObject(new Vector2(700, 500), data.totalSum.ToString()));
             currTotal = (TextObject)MakeSceneObject(new TextObject());
             currTotal.transform.Position = new Vector2(300, 500);
             currTotal.Scale = 0.5f;
@@ -94,25 +95,36 @@ namespace Dogware.Scenes.Minigames
 
             if(arrows.Count > 0)
                 arrows[0].Selected = true;
+            else
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    float xP = 400 + (50 * i);
+
+                    arrows.Add((Arrow)MakeSceneObject(new Arrow(new Vector2(xP, 500), this)));
+                }
+
+                arrows[0].Selected = true;
+            }
 
             string currSum = "";
 
-            for(int i = 0; i < currentScenario.arrows; i++)
+            for(int i = 0; i < hitValues.Count; i++)
             {
-                if(i < hitValues.Count)
-                {
-                    currSum += hitValues[i].ToString();
-                }
-                else
-                {
-                    currSum += "?";
-                }
-
-                if (i < currentScenario.arrows - 1)
+                currSum += hitValues[i].ToString();
+                
+                if (i < hitValues.Count - 1)
                     currSum += " + ";
             }
 
-            currSum += " = " + currentScenario.totalSum;
+            int total = 0;
+
+            foreach (int val in hitValues)
+                total += val;
+
+            thrownTotal.Text = currentScenario.totalSum.ToString();
+
+            currSum += " = " + total.ToString();
 
             currTotal.Text = currSum;
         }
@@ -124,12 +136,11 @@ namespace Dogware.Scenes.Minigames
 
         private class TargetData
         {
-            public int arrows, targets, difficulty, totalSum;
+            public int targets, difficulty, totalSum;
             public int[] targetValues;
 
-            public TargetData(int amountOfArrows, int amountOfTargets, int totalSum, int difficulty, int[] targetValues)
+            public TargetData(int amountOfTargets, int totalSum, int difficulty, int[] targetValues)
             {
-                arrows = amountOfArrows;
                 targets = amountOfTargets;
                 this.difficulty = difficulty;
                 this.totalSum = totalSum;
