@@ -19,7 +19,7 @@ namespace Dogware.Objects.tin_cans
 
         public override void Update()
         {
-            renderer.Scale = transform.Position.Y / 600f;
+            renderer.Scale = (transform.Position.Y / 600f + 0.5f) * 0.3f;
             transform.Position += Velocity;
 
             if (transform.Position.X <= 50 || transform.Position.X >= 750)
@@ -30,7 +30,7 @@ namespace Dogware.Objects.tin_cans
             if (thrown == false && Keyboard.GetState().IsKeyDown(Keys.Space))
             {
                 thrown = true;
-                Velocity = new Vector2(0, -4);
+                Velocity = new Vector2(0, -7);
                 
             }
             

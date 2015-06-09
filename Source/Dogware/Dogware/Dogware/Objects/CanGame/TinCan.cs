@@ -12,10 +12,19 @@ namespace Dogware.Objects.tin_cans
         public Vector2 Velocity = new Vector2(0, 0);
         private float timer = 1;
         public bool Hit;
+        private TextObject text;
+        public int Value;
 
-        public TinCan(Vector2 position) : base("can", false, position, "CanGame/tincan.jpg")
+        public TinCan(Vector2 position, TextObject obj, int value) : base("can", false, position, "CanGame/tincan.jpg")
         {
-            renderer.Scale = 0.20f;
+            text = obj;
+            obj.transform.LocalPosition = Vector2.Zero;
+            obj.Parent = this;
+            renderer.Scale = 0.30f;
+            obj.Scale = 0.5f;
+            Value = value;
+
+            obj.Text = value.ToString();
         }
 
         public override void Update()
@@ -40,5 +49,6 @@ namespace Dogware.Objects.tin_cans
                 Hit = true;
             }
         }
+
     }
 }
