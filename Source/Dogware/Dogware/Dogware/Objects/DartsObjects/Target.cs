@@ -21,7 +21,7 @@ namespace Dogware.Objects.DartsObjects
             Value = value;
             textObject.Text = value.ToString();
             textObject.Parent = this;
-            textObject.transform.LocalPosition = new Vector2(0, -20);
+            textObject.transform.LocalPosition = new Vector2(0, 0);
             textObject.Scale = 0.5f;
 
             renderer.Scale = 1.3f;

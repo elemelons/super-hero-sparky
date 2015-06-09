@@ -24,7 +24,7 @@ namespace Dogware.Objects
             if (Text == null)
                 Text = "";
 
-            batch.DrawString(TGame.Instance.MainFont, Text, transform.Position, renderer.BlendColor, transform.Rotation, new Vector2(((Text.Length * 24) + (Text.Length * 24)) * Scale, 24 * Scale), Scale, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, 0);
+            batch.DrawString(TGame.Instance.MainFont, Text, transform.Position, renderer.BlendColor, transform.Rotation, new Vector2(((Text.Length * 24) + (Text.Length * 12)) * Scale, 24 * Scale), Scale, Microsoft.Xna.Framework.Graphics.SpriteEffects.None, 0);
         }
     }
 }
