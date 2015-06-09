@@ -21,5 +21,10 @@ namespace TimGame
         {
             return min + (Value * (max - min));
         }
+
+        public static int Range(int min, int max)
+        {
+            return rand.Next(min, max);
+        }
     }
 }
