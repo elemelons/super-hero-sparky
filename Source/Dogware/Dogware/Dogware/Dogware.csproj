@@ -39,7 +39,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game1.cs" />
-    <Compile Include="Objects\Background.cs" />
     <Compile Include="Objects\Button.cs" />
     <Compile Include="Objects\CanGame\ball.cs" />
     <Compile Include="Objects\CanGame\TinCan.cs" />
@@ -47,6 +46,7 @@
     <Compile Include="Objects\DartsObjects\Target.cs" />
     <Compile Include="Objects\GarbageDodging\Obstacle.cs" />
     <Compile Include="Objects\GarbageDodging\RunningDog.cs" />
+    <Compile Include="Objects\GeographyObjects\Gebied.cs" />
     <Compile Include="Objects\LevelSceneObjects\MinigameTimeIndicator.cs" />
     <Compile Include="Objects\LevelSceneObjects\PointIndicator.cs" />
     <Compile Include="Objects\QuitButton.cs" />
@@ -64,6 +64,7 @@
     <Compile Include="Scenes\LevelScene.cs" />
     <Compile Include="Scenes\Minigames\Darts.cs" />
     <Compile Include="Scenes\Minigames\GarbageDodging.cs" />
+    <Compile Include="Scenes\Minigames\Geography.cs" />
     <Compile Include="Scenes\Minigames\MinigameBase.cs" />
     <Compile Include="Scenes\Minigames\MinigameServer.cs" />
     <Compile Include="Scenes\Minigames\TestGame.cs" />
@@ -95,13 +96,46 @@
     <Content Include="Content\ball.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\CanGame\ball.png">
+    <Content Include="Content\CanGame\baseball.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\CanGame\Blikje.png">
+    <Content Include="Content\CanGame\tincan.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\CanGame\Blikjes achtergrond.png">
+    <Content Include="Content\Geography\afrika.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\azie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\belgie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\duitsland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\europa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\frankrijk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\friesland.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\limburg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\luxemburg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\oceanie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\overijssel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Geography\zuidholland.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\SelectionArrow.png">
