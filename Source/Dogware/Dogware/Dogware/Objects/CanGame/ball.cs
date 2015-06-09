@@ -12,14 +12,15 @@ namespace Dogware.Objects.tin_cans
     {
         public Vector2 Velocity = new Vector2(12, 0);
         private bool thrown = false;
-        public Ball(Vector2 position) : base("ball", false, position, "CanGame/baseball.png")
-        {
 
+        public Ball(Vector2 position) : base("ball", false, position, "CanGame/ball.png")
+        {
+            DrawDepth = -10;
         }
 
         public override void Update()
         {
-            renderer.Scale = (transform.Position.Y / 600f + 0.5f) * 0.3f;
+            renderer.Scale = (transform.Position.Y / 600f + 0.5f) * 0.6f;
             transform.Position += Velocity;
 
             if (transform.Position.X <= 50 || transform.Position.X >= 750)

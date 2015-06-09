@@ -14,26 +14,26 @@ namespace Dogware.Scenes.Minigames
         {
             new LevelGroup(new MinigameBase[]
                 {
+                    //new Darts(),
+                    new TinCans()//,
+                    //new GarbageDodging(),
+                    //new WordRecognition()
+                }),
+
+            new LevelGroup(new MinigameBase[]
+                {
                     new Darts(),
-                    new TinCans(),
+                    //new TinCans(),
                     new GarbageDodging(),
                     new WordRecognition()
                 }),
 
             new LevelGroup(new MinigameBase[]
                 {
-                    new Darts(),
-                    new TinCans(),
-                    new GarbageDodging(),
-                    new WordRecognition()
-                }),
-
-            new LevelGroup(new MinigameBase[]
-                {
-                    new Darts(),
-                    new TinCans(),
-                    new GarbageDodging(),
-                    new WordRecognition()
+                    new Darts()//,
+                    //new TinCans(),
+                    //new GarbageDodging(),
+                    //new WordRecognition()
                 })
         };
 

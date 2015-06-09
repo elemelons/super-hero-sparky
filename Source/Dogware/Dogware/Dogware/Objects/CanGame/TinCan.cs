@@ -15,16 +15,18 @@ namespace Dogware.Objects.tin_cans
         private TextObject text;
         public int Value;
 
-        public TinCan(Vector2 position, TextObject obj, int value) : base("can", false, position, "CanGame/tincan.jpg")
+        public TinCan(Vector2 position, TextObject obj, int value) : base("can", false, position, "CanGame/Blikje.png")
         {
             text = obj;
             obj.transform.LocalPosition = Vector2.Zero;
             obj.Parent = this;
             renderer.Scale = 0.30f;
             obj.Scale = 0.5f;
+            renderer.Scale = 0.5f;
             Value = value;
 
             obj.Text = value.ToString();
+            obj.DrawDepth = -1;
         }
 
         public override void Update()
@@ -35,7 +37,13 @@ namespace Dogware.Objects.tin_cans
 
                 if(timer < 0)
                 {
-                    Destroy();
+                    transform.Position += new Vector2(0, -3);
+                    renderer.Scale -= 0.006f;
+
+                    transform.Rotation += 0.1f;
+
+                    if (renderer.Scale < 0)
+                        Destroy();
                 }
             }
            

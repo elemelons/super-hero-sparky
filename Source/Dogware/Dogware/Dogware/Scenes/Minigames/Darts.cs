@@ -47,9 +47,6 @@ namespace Dogware.Scenes.Minigames
 
             bool won = total == currentScenario.totalSum;
 
-            if (arrows.Count > 0)
-                won = false;
-
             return won;
         }
 
@@ -68,22 +65,18 @@ namespace Dogware.Scenes.Minigames
 
             arrows = new List<Arrow>();
 
-            for (int i = 0; i < 5; i++)
-            {
-                float xP = 400 + (50 * i);
-
-                arrows.Add((Arrow)MakeSceneObject(new Arrow(new Vector2(xP, 500), this)));
-            }
-
+            arrows.Add((Arrow)MakeSceneObject(new Arrow(new Vector2(xAim, 700), this)));
+            
             for(int i = 0; i < data.targets; i++)
             {
                 float xP = 400 + ((-70 * (data.targets * 0.5f)) + 70 * i);
                 MakeSceneObject(new Target(new Vector2(xP, 100), (TextObject)MakeSceneObject(new TextObject()), data.targetValues[i]));
             }
 
-            thrownTotal = (TextObject)MakeSceneObject(new TextObject(new Vector2(700, 500), data.totalSum.ToString()));
+            thrownTotal = (TextObject)MakeSceneObject(new TextObject(new Vector2(400, 300), data.totalSum.ToString()));
+            thrownTotal.DrawDepth = 5;
             currTotal = (TextObject)MakeSceneObject(new TextObject());
-            currTotal.transform.Position = new Vector2(300, 500);
+            currTotal.transform.Position = new Vector2(400, 500);
             currTotal.Scale = 0.5f;
         }
 
@@ -91,20 +84,18 @@ namespace Dogware.Scenes.Minigames
         {
             base.Update();
 
-            arrows.RemoveAll(o => o.Fired);
-
-            if(arrows.Count > 0)
-                arrows[0].Selected = true;
-            else
+            if (!HasWon())
             {
-                for (int i = 0; i < 5; i++)
+                arrows.RemoveAll(o => o.Fired);
+
+                if (arrows.Count > 0)
+                    arrows[0].Selected = true;
+                else
                 {
-                    float xP = 400 + (50 * i);
-
-                    arrows.Add((Arrow)MakeSceneObject(new Arrow(new Vector2(xP, 500), this)));
+                    arrows.Add((Arrow)MakeSceneObject(new Arrow(new Vector2(xAim, 700), this)));
+                
+                    arrows[0].Selected = true;
                 }
-
-                arrows[0].Selected = true;
             }
 
             string currSum = "";
@@ -127,6 +118,7 @@ namespace Dogware.Scenes.Minigames
             currSum += " = " + total.ToString();
 
             currTotal.Text = currSum;
+                
         }
 
         public override string GetObjective()

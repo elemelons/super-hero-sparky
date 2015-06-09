@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game1.cs" />
+    <Compile Include="Objects\Background.cs" />
     <Compile Include="Objects\Button.cs" />
     <Compile Include="Objects\CanGame\ball.cs" />
     <Compile Include="Objects\CanGame\TinCan.cs" />
@@ -94,10 +95,13 @@
     <Content Include="Content\ball.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\CanGame\baseball.png">
+    <Content Include="Content\CanGame\ball.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\CanGame\tincan.jpg">
+    <Content Include="Content\CanGame\Blikje.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\CanGame\Blikjes achtergrond.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\SelectionArrow.png">

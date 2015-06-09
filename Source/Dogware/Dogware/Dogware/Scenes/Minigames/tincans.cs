@@ -23,6 +23,8 @@ namespace Dogware.Scenes.Minigames
         public int Option;
         private int[] incorrectAnswers;
 
+        private int maxVal = 10;
+
         public enum SumType
         {
             Plus,
@@ -44,25 +46,35 @@ namespace Dogware.Scenes.Minigames
         public override void InitScene()
         {
             base.InitScene();
-            CreateSum();
+            SumData data = CreateSum();
             CreateNumbers();
-            can = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * 1), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[0]));
-            can1 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * 2), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[1]));
-            can2 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * 3), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[2]));
-            can3 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * 4), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[3]));
-            can4 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * 5), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[4]));
-            can5 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * 6), 200), (TextObject)MakeSceneObject(new TextObject()), Answer));
+
+            maxVal = 10 * (10 * (MainMenu.CurrentLevel + 1));
+
+            List<int> positions = new int[]{1, 2, 3, 4, 5, 6}.ToList();
+            positions = positions.OrderBy(o => TimGame.Random.Value).ToList();
+
+            MakeSceneObject(new Background("CanGame/Blikjes achtergrond.png"));
+
+            can = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[0]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[0]));
+            can1 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[1]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[1]));
+            can2 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[2]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[2]));
+            can3 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[3]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[3]));
+            can4 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[4]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[4]));
+            can5 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[5]), 200), (TextObject)MakeSceneObject(new TextObject()), Answer));
             baseball = (Ball)MakeSceneObject(new Ball(new Vector2(100, 450)));
+
+            MakeSceneObject(new TextObject(new Vector2(400, 500), data.sum));
+
+            correctCanHit = false;
         }
 
         public override void Update()
         {
             base.Update();
 
-            //if(juiste blikje is geraakt)
-            //{
-            //    correctCanHit = true;
-            //}
+            if (can5.Hit)
+                correctCanHit = true;
         }
 
         public override string GetObjective()
@@ -83,47 +95,47 @@ namespace Dogware.Scenes.Minigames
             Console.WriteLine(sort);
             
             SumType type = (SumType)sort;
+            Console.WriteLine(type.ToString());
             int X;
             int Y;
      
-
             switch(type)
             {
                 case SumType.Plus:
-                    X = rdm.Next(1, 101);
-                    Y = rdm.Next(1, 101);
+                    X = rdm.Next(1, maxVal);
+                    Y = rdm.Next(1, maxVal);
                     data.sum = X + " + " + Y;
                     data.answer = X + Y;
                     Kind = 1;
-                    break;
+                break;
 
                 case SumType.Minus:
-                    Random rnd = new Random();
-                    X = rnd.Next(1, 101);
-                    Y = rnd.Next(1, 101);
+                    X = rdm.Next(1, maxVal);
+                    Y = rdm.Next(1, maxVal);
                     Kind = 2;
+
                     if (X > Y)
                     {
                         data.sum = X + " - " + Y;
                         data.answer = X - Y;
                     }
-
-                    else if (Y > X)
+                    else
                     {
                         data.sum = Y + " - " + X;
-                        data.answer =  (Y - X);
+                        data.answer = Y - X;
                     }
 
-                    break;
+                break;
 
                 case SumType.Multiply:
-                    X = rdm.Next(10);
-                    Y = rdm.Next(10);
+                    X = rdm.Next(maxVal);
+                    Y = rdm.Next(maxVal);
                     Kind = 3;
                     data.sum = X + " X " + Y;
                     data.answer = X * Y;
                 break;
-                }
+             }
+
             Answer = data.answer;
             return data;
         }
@@ -132,19 +144,16 @@ namespace Dogware.Scenes.Minigames
         {
             incorrectAnswers = new int[5];
 
-            if (Kind == 1)
+            Random rnd = new Random();
+            Option = rnd.Next(1);
+            for (int i = 0; i < incorrectAnswers.Length; i++)
             {
-                Random rnd = new Random();
-                Option = rnd.Next(1);
-                for (int i = 0; i < incorrectAnswers.Length; i++ )
-                {
-                    int addition = rnd.Next(1, 30);
+                int addition = rnd.Next(1, 30);
 
-                    if((rnd.Next(100) > 50) && addition < Answer)
-                        addition *= -1;
+                if ((rnd.Next(100) > 50) && addition < Answer)
+                    addition *= -1;
 
-                    incorrectAnswers[i] = Answer + addition;
-                }
+                incorrectAnswers[i] = Answer + addition;
             }
 
             return incorrectAnswers;

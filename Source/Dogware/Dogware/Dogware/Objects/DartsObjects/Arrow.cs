@@ -25,7 +25,7 @@ namespace Dogware.Objects.DartsObjects
         {
             base.Update();
 
-            if (!hit)
+            if (!hit && !baseGame.HasWon())
             {
                 if(Selected)
                 {

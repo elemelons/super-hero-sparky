@@ -31,15 +31,13 @@ namespace Dogware.Scenes.Minigames
         {
             time = initialTime;
 
-            GameObject obj = MakeSceneObject(new TextObject(new Vector2(400, 50), GetObjective(), 0.5f));
+            GameObject obj = MakeSceneObject(new TextObject(new Vector2(400, 10), GetObjective(), 0.5f));
             obj.DrawDepth = 5;
         }
 
         public override void Update()
         {
             time -= 0.01f;
-
-            Console.WriteLine("T remaining: " + time);
         }
 
         public void ReduceTime()

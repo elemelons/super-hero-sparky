@@ -32,8 +32,9 @@ namespace TimGame
             "WordRecognition/solaire.jpg",
             "WordRecognition/spider.jpg",
             "SelectionArrow.png",
-            "CanGame/baseball.png",
-            "CanGame/tincan.jpg"        
+            "CanGame/ball.png",
+            "CanGame/Blikje.png",
+            "CanGame/Blikjes achtergrond.png"
         };
         
         public void Start()
