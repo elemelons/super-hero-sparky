@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Tim/Documents/HR/Project/SVN/trunk/Source/Dogware/Dogware/Dogware/Content/FunSized.spritefont</SourceFile>
-  <SourceTime>2015-06-09T14:11:41.6848588+02:00</SourceTime>
-  <DestFile>C:/Users/Tim/Documents/HR/Project/SVN/trunk/Source/Dogware/Dogware/Dogware/Content/bin/Windows/FunSized.xnb</DestFile>
-  <DestTime>2015-06-09T14:11:45.4390206+02:00</DestTime>
+  <SourceFile>D:/Users/Kalle/Desktop/mooie naam/trunk/Source/Dogware/Dogware/Dogware/Content/FunSized.spritefont</SourceFile>
+  <SourceTime>2015-06-09T14:34:37.6476924+02:00</SourceTime>
+  <DestFile>D:/Users/Kalle/Desktop/mooie naam/trunk/Source/Dogware/Dogware/Dogware/Content/bin/Windows/FunSized.xnb</DestFile>
+  <DestTime>2015-06-09T16:24:22.8753335+02:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2015-03-16T04:01:46+01:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
