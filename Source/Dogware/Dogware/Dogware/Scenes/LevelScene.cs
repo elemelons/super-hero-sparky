@@ -1,4 +1,5 @@
-﻿using Dogware.Objects.LevelSceneObjects;
+﻿using Dogware.Objects;
+using Dogware.Objects.LevelSceneObjects;
 using Dogware.Scenes.Minigames;
 using Microsoft.Xna.Framework;
 using System;
@@ -33,7 +34,11 @@ namespace Dogware.Scenes
 
         public override void InitScene()
         {
-            timeIndicator = new MinigameTimeIndicator();
+            timeIndicator = (MinigameTimeIndicator)MakeSceneObject(new MinigameTimeIndicator());
+
+            Background bgr = (Background)MakeSceneObject(new Background("superdog.png", true));
+            bgr.renderer.Scale = 0.7f;
+
             timeIndicator.DrawDepth = -2000;
         }
 
@@ -46,7 +51,7 @@ namespace Dogware.Scenes
                     if (gamesWon >= winsNeeded)
                     {
                         LevelStatus[currentLevel] = true;
-                        TGame.Instance.LoadScene(new MainMenu());
+                        TGame.Instance.LoadScene(new LevelMenu());
                     }
                     else
                     {

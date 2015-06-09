@@ -22,6 +22,7 @@ namespace TimGame
             "tinyBall.png",
             "SelectionArrow.png",
             "SelectionArrow.png",
+
             "WordRecognition/bat.jpg",
             "WordRecognition/cat.jpg",
             "WordRecognition/dog.jpg",
@@ -31,7 +32,9 @@ namespace TimGame
             "WordRecognition/mouse.jpg",
             "WordRecognition/solaire.jpg",
             "WordRecognition/spider.jpg",
+
             "SelectionArrow.png",
+
             "Geography/friesland.png",
             "Geography/limburg.png",
             "Geography/overijssel.png",
@@ -44,9 +47,19 @@ namespace TimGame
             "Geography/frankrijk.png",
             "Geography/luxemburg.png",
             "Geography/oceanie.png",
+
             "CanGame/ball.png",
             "CanGame/Blikje.png",
             "CanGame/Blikjes achtergrond.png",
+
+            "greenButton.png",
+            "redButton.png",
+            "Splash.png",
+            "playbutton.png",
+            "stopbutton.png",
+            "menuscreen.png",
+            "superdog.png",
+            "besturingen.png",
             "MinigameFrame.png"
         };
         

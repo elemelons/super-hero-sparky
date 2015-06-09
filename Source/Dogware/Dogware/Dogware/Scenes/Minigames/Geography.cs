@@ -61,7 +61,7 @@ namespace Dogware.Scenes.Minigames
             base.InitScene();
 
             Correct = false;
-            AreaData data = levels[MainMenu.CurrentLevel][(int)Math.Floor((double)TimGame.Random.Range(0, levels[MainMenu.CurrentLevel].Length))];
+            AreaData data = levels[LevelMenu.CurrentLevel][(int)Math.Floor((double)TimGame.Random.Range(0, levels[LevelMenu.CurrentLevel].Length))];
 
             Gebied gebied = (Gebied)MakeSceneObject(new Gebied(data.imageName, data.correct, data.incorrect1, data.incorrect2, this));
         }

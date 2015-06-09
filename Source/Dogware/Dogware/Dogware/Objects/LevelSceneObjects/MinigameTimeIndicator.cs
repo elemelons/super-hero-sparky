@@ -22,7 +22,7 @@ namespace Dogware.Objects.LevelSceneObjects
         {
             base.Update();
 
-            renderer.BlendColor = MainMenu.LevelColors[MainMenu.CurrentLevel];
+            renderer.BlendColor = LevelMenu.LevelColors[LevelMenu.CurrentLevel];
 
             if(gameToTrack != null)
                 transform.Position = new Vector2(30 +  740 * gameToTrack.TimeRemainingAsPercentage, 570);

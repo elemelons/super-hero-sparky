@@ -49,7 +49,7 @@ namespace Dogware.Scenes.Minigames
             SumData data = CreateSum();
             CreateNumbers();
 
-            maxVal = 10 * (10 * (MainMenu.CurrentLevel + 1));
+            maxVal = 10 * (10 * (LevelMenu.CurrentLevel + 1));
 
             List<int> positions = new int[]{1, 2, 3, 4, 5, 6}.ToList();
             positions = positions.OrderBy(o => TimGame.Random.Value).ToList();

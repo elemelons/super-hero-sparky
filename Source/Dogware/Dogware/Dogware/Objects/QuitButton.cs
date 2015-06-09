@@ -8,7 +8,7 @@ namespace Dogware.Objects
 {
     class QuitButton : Button
     {
-        public QuitButton(Vector2 position) : base("Quit", position, "tinyBall.png")
+        public QuitButton(Vector2 position) : base("Quit", position, "stopbutton.png")
         {
 
         }

@@ -65,11 +65,11 @@ namespace Dogware.Scenes.Minigames
             arrow = (SelectionArrow)MakeSceneObject(new SelectionArrow(Vector2.One * -50));
             arrow.transform.Rotation = MathHelper.ToRadians(-90);
 
-            blocks = new ImageBlock[amountsPerLevel[MainMenu.CurrentLevel]];
+            blocks = new ImageBlock[amountsPerLevel[LevelMenu.CurrentLevel]];
 
-            selectionIndex = (int)Math.Floor((float)amountsPerLevel[MainMenu.CurrentLevel] / 2);
+            selectionIndex = (int)Math.Floor((float)amountsPerLevel[LevelMenu.CurrentLevel] / 2);
 
-            int[] numbers = new int[amountsPerLevel[MainMenu.CurrentLevel]];
+            int[] numbers = new int[amountsPerLevel[LevelMenu.CurrentLevel]];
 
             for (int i = 0; i < numbers.Length; i++)
                 numbers[i] = -1;

@@ -28,7 +28,7 @@ namespace Dogware.Scenes
 
         public override void InitScene()
         {
-            MakeSceneObject(new SplashLogo(new Vector2(100, 100)));
+            MakeSceneObject(new SplashLogo());
         }
     }
 }

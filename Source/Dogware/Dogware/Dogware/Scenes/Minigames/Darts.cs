@@ -58,7 +58,7 @@ namespace Dogware.Scenes.Minigames
             hitValues = new List<int>();
             scenarios = scenarios.OrderBy(o => (o.targets / o.targets) * random.Next(100)).ToArray();
 
-            TargetData data = scenarios.First(o => o.difficulty == MainMenu.CurrentLevel);
+            TargetData data = scenarios.First(o => o.difficulty == LevelMenu.CurrentLevel);
             currentScenario = data;
 
             data.targetValues = data.targetValues.OrderBy(o => TimGame.Random.Value).ToArray();

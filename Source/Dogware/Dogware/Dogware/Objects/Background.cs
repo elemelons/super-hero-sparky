@@ -14,7 +14,7 @@ namespace Dogware.Objects
             DrawDepth = 1000;
 
             if (!ignoreLevelColor)
-                renderer.BlendColor = MainMenu.LevelColors[MainMenu.CurrentLevel];
+                renderer.BlendColor = LevelMenu.LevelColors[LevelMenu.CurrentLevel];
         }
     }
 }

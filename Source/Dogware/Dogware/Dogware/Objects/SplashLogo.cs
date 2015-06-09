@@ -9,7 +9,7 @@ namespace Dogware.Objects
 {
     class SplashLogo : GameObject
     {
-        public SplashLogo(Vector2 position) : base("Splash Logo", false, position, "tinyBall.png")
+        public SplashLogo() : base("Splash Logo", false, new Vector2(400, 300), "Splash.png")
         {
 
         }
