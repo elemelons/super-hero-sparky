@@ -15,7 +15,7 @@ namespace Dogware.Objects.DartsObjects
         private bool hit = false;
         private Darts baseGame;
 
-        public Arrow(Vector2 position, Darts game) : base("Arrow", false, position, "SelectionArrow.png")
+        public Arrow(Vector2 position, Darts game) : base("Arrow", false, position, "Darts/arrow.png")
         {
             baseGame = game;
             transform.Rotation += MathHelper.ToRadians(90);
@@ -49,7 +49,7 @@ namespace Dogware.Objects.DartsObjects
 
                 if (Selected || Fired)
                 {
-                    transform.Rotation += (MathHelper.ToRadians(-90) - transform.Rotation) * 0.1f;
+                    transform.Rotation += (MathHelper.ToRadians(0) - transform.Rotation) * 0.1f;
                 }
 
                 if (Fired)
@@ -63,7 +63,7 @@ namespace Dogware.Objects.DartsObjects
         {
             base.OnCollision(other);
 
-            if(other is Target)
+            if(other is Target && !hit && transform.Position.X < other.Bounds.X + other.Bounds.Width && transform.Position.X > other.Bounds.X)
             {
                 hit = true;
                 ((Target)other).Attach(this);

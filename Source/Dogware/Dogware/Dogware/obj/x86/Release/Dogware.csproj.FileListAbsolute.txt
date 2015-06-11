@@ -59,4 +59,10 @@ C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\W
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\SharpDX.Direct3D9.xml
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Release\Dogware.exe
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Release\Dogware.pdb
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Release\Dogware.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\MinigameFrameBackground.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\creditsbutton.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\arrow.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\BoardFrame.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\dartbord.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Scenes\Minigames\Darts.cs
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Arrow.png

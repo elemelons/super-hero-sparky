@@ -9,8 +9,6 @@ namespace Dogware.Objects.TestMinigame
 {
     class TargetBall : GameObject
     {
-        MovingActivatedBall movingBall;
-
         private float speed = -15;
         private float gravity = 1;
         public bool gravityToggled = false;

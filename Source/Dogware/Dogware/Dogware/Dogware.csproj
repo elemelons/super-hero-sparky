@@ -50,6 +50,7 @@
     <Compile Include="Objects\GeographyObjects\Gebied.cs" />
     <Compile Include="Objects\LevelSceneObjects\MinigameTimeIndicator.cs" />
     <Compile Include="Objects\LevelSceneObjects\PointIndicator.cs" />
+    <Compile Include="Objects\CreditButton.cs" />
     <Compile Include="Objects\PlayButton.cs" />
     <Compile Include="Objects\QuitButton.cs" />
     <Compile Include="Objects\LevelOrb.cs" />
@@ -63,10 +64,13 @@
     <Compile Include="Objects\WordRecognition\ImageBlock.cs" />
     <Compile Include="Objects\WordRecognition\WordDisplay.cs" />
     <Compile Include="Scenes\ControlScreen.cs" />
+    <Compile Include="Scenes\CreditScene.cs" />
     <Compile Include="Scenes\IntroSplash.cs" />
     <Compile Include="Scenes\LevelScene.cs" />
     <Compile Include="Scenes\MainMenu.cs" />
-    <Compile Include="Scenes\Minigames\Darts.cs" />
+    <Compile Include="Scenes\Minigames\Darts.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Scenes\Minigames\GarbageDodging.cs" />
     <Compile Include="Scenes\Minigames\Geography.cs" />
     <Compile Include="Scenes\Minigames\MinigameBase.cs" />
@@ -97,7 +101,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Arrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\besturingen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\creditsbutton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Darts\arrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Darts\BoardFrame.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Darts\dartbord.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\MinigameFrameBackground.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\menuscreen.png">

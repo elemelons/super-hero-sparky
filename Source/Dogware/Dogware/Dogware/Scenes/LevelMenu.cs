@@ -54,7 +54,7 @@ namespace Dogware.Scenes
                     selectionIndex = 0;
             }
 
-            arrow.transform.Position = new Vector2(buttons[selectionIndex].transform.Position.X - 32, buttons[selectionIndex].transform.Position.Y);
+            arrow.transform.Position = new Vector2(buttons[selectionIndex].transform.Position.X - arrow.renderer.TextureWidth, buttons[selectionIndex].transform.Position.Y);
             dog.MoveTo(buttons[selectionIndex].transform.Position);
 
             if (Input.ConfirmPressed)

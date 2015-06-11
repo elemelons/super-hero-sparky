@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Dogware.Scenes.Minigames;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,8 @@ namespace TimGame
 
         public static List<GameObject> AllObjects { get; private set; }
         public static List<GameObject> NewObjects { get; private set; }
+
+        public Scene baseScene;
 
         public bool Active = true;
 

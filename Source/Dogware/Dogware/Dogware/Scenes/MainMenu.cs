@@ -29,6 +29,7 @@ namespace Dogware.Scenes
             float addY = 120;
 
             buttons.Add((Button)MakeSceneObject(new PlayButton(new Vector2(400, initialY + (addY * buttons.Count)))));
+            buttons.Add((Button)MakeSceneObject(new CreditButton(new Vector2(400, initialY + (addY * buttons.Count)))));
             buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(400, initialY + (addY * buttons.Count)))));
         }
 
@@ -49,7 +50,7 @@ namespace Dogware.Scenes
             if (Input.ConfirmPressed)
                 buttons[selectionIndex].OnButtonClick();
 
-            arrow.transform.Position = buttons[selectionIndex].transform.Position + new Vector2(-70, 0);
+            arrow.transform.Position = buttons[selectionIndex].transform.Position + new Vector2(-arrow.renderer.TextureWidth, 0);
         }
     }
 }

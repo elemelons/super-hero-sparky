@@ -34,6 +34,7 @@ namespace TimGame
             "WordRecognition/spider.jpg",
 
             "SelectionArrow.png",
+            "Arrow.png",
 
             "Geography/friesland.png",
             "Geography/limburg.png",
@@ -52,15 +53,21 @@ namespace TimGame
             "CanGame/Blikje.png",
             "CanGame/Blikjes achtergrond.png",
 
+            "Darts/arrow.png",
+            "Darts/BoardFrame.png",
+            "Darts/dartbord.png",
+
             "greenButton.png",
             "redButton.png",
             "Splash.png",
             "playbutton.png",
             "stopbutton.png",
+            "creditsbutton.png",
             "menuscreen.png",
             "superdog.png",
             "besturingen.png",
-            "MinigameFrame.png"
+            "MinigameFrame.png",
+            "MinigameFrameBackground.png"
         };
         
         public void Start()

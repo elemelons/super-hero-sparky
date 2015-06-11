@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dogware.Scenes.Minigames;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,8 @@ namespace TimGame
                 SceneObjects = new List<GameObject>();
 
             SceneObjects.Add(obj);
+
+            obj.baseScene = this;
 
             return obj;
         }

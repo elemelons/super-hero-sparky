@@ -16,7 +16,9 @@ namespace Dogware.Objects.DartsObjects
         private float ySpeed = 0;
         private float rotSpeed = 0;
 
-        public Target(Vector2 pos, TextObject textObject, int value) : base("Target", false, pos, "ball.png")
+        private bool spawned = false;
+
+        public Target(Vector2 pos, TextObject textObject, int value) : base("Target", false, pos, "Darts/dartbord.png")
         {
             Value = value;
             textObject.Text = value.ToString();
@@ -24,13 +26,22 @@ namespace Dogware.Objects.DartsObjects
             textObject.transform.LocalPosition = new Vector2(0, 0);
             textObject.Scale = 0.5f;
 
-            renderer.Scale = 1.3f;
+            renderer.Scale = 0.5f;
             textObject.DrawDepth = -1;
         }
 
         public override void Update()
         {
             base.Update();
+
+            if(!spawned && baseScene != null)
+            {
+                spawned = true;
+
+                Background obj = (Background)baseScene.MakeSceneObject(new Background("Darts/BoardFrame.png", true));
+                obj.transform.Position = transform.Position + new Vector2(0, -30);
+                obj.renderer.Scale = 0.5f;
+            }
 
             if(hit)
             {
@@ -48,6 +59,7 @@ namespace Dogware.Objects.DartsObjects
         {
             ySpeed = -5;
             arrow.Parent = this;
+            arrow.transform.LocalPosition = arrow.transform.Position - transform.Position;
             hit = true;
             IgnoreCollisions = true;
             rotSpeed = (-0.5f + TimGame.Random.Value) * 0.1f;
