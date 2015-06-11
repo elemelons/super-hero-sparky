@@ -89,7 +89,7 @@ namespace TimGame
 
             GameObject.AllObjects.AddRange(GameObject.NewObjects);
             GameObject.NewObjects.RemoveAll(o => true);
-            GameObject.AllObjects.RemoveAll(o => o.destroyed);
+            GameObject.AllObjects.RemoveAll(o => o == null || o.destroyed);
             GameObject.SortObjects();
 
             game.Update();
