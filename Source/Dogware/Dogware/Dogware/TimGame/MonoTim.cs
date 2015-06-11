@@ -58,29 +58,31 @@ namespace TimGame
             Parallel.ForEach(GameObject.AllObjects, toUpdate =>
             {
                 toUpdate.UpdateObject();
+            });
 
-                if (!toUpdate.IgnoreCollisions)
+            List<GameObject> collisionCheck = GameObject.AllObjects.FindAll(o => !o.IgnoreCollisions && o.Active);
+
+            foreach(GameObject toUpdate in collisionCheck)
+            {
+                foreach (GameObject potentialCollision in collisionCheck)
                 {
-                    foreach (GameObject potentialCollision in GameObject.AllObjects)
+                    if (potentialCollision != toUpdate)
                     {
-                        if (potentialCollision != toUpdate && toUpdate.Active && potentialCollision.Active && !toUpdate.IgnoreCollisions && !potentialCollision.IgnoreCollisions)
+                        if (collided.Find(o => ((o.objOne == toUpdate && o.objTwo == potentialCollision) || (o.objOne == potentialCollision && o.objTwo == toUpdate))) == null)
                         {
-                            if (collided.Find(o => ((o.objOne == toUpdate && o.objTwo == potentialCollision) || (o.objOne == potentialCollision && o.objTwo == toUpdate))) == null)
+                            if (toUpdate.Bounds.Intersects(potentialCollision.Bounds))
                             {
-                                if (toUpdate.Bounds.Intersects(potentialCollision.Bounds))
-                                {
-                                    CollisionData newCollision = new CollisionData();
+                                CollisionData newCollision = new CollisionData();
 
-                                    newCollision.objOne = toUpdate;
-                                    newCollision.objTwo = potentialCollision;
+                                newCollision.objOne = toUpdate;
+                                newCollision.objTwo = potentialCollision;
 
-                                    collided.Add(newCollision);
-                                }
+                                collided.Add(newCollision);
                             }
                         }
                     }
                 }
-            });
+            }
 
             foreach (CollisionData collision in collided)
                 collision.SendCollisionMessage();
