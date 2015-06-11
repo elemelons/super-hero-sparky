@@ -43,7 +43,9 @@ namespace Dogware.Scenes
         {
             timeIndicator = (MinigameTimeIndicator)MakeSceneObject(new MinigameTimeIndicator());
 
-            objectiveText = (TextObject)MakeSceneObject(new TextObject(new Vector2(400, 450), "", 0.7f));
+            objectiveText = (TextObject)MakeSceneObject(new TextObject(new Vector2(400, 450), "", 0.4f));
+
+
             startGameTimer = (TextObject)MakeSceneObject(new TextObject(new Vector2(400, 300), "", 2));
 
             objectiveText.Active = false;

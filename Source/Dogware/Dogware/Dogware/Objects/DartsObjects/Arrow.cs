@@ -18,7 +18,8 @@ namespace Dogware.Objects.DartsObjects
         public Arrow(Vector2 position, Darts game) : base("Arrow", false, position, "Darts/arrow.png")
         {
             baseGame = game;
-            transform.Rotation += MathHelper.ToRadians(90);
+            transform.Rotation += MathHelper.ToRadians(300);
+            renderer.Scale = 0.5f;
         }
 
         public override void Update()

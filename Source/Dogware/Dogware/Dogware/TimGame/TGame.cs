@@ -35,6 +35,7 @@ namespace TimGame
 
             "SelectionArrow.png",
             "Arrow.png",
+            "Credits achtergrond.png",
 
             "Geography/friesland.png",
             "Geography/limburg.png",

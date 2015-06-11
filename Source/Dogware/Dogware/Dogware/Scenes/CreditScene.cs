@@ -22,6 +22,7 @@ namespace Dogware.Scenes
 
         public override void InitScene()
         {
+            MakeSceneObject(new Background("Credits achtergrond.png", true));
             MakeSceneObject(new TextObject(new Vector2(400, 200), "Credits"));
 
             int pos = 300;

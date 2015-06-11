@@ -32,7 +32,7 @@ namespace Dogware.Scenes.Minigames
             time = initialTime;
 
             MakeSceneObject(new Background("MinigameFrame.png")).DrawDepth = -1000;
-            MakeSceneObject(new Background("MinigameFrameBackground.png")).DrawDepth = -1000;
+            MakeSceneObject(new Background("MinigameFrameBackground.png", true)).DrawDepth = -999;
 
             GameObject obj = MakeSceneObject(new TextObject(new Vector2(400, 30), GetObjective(), 0.5f));
             obj.DrawDepth = 5;

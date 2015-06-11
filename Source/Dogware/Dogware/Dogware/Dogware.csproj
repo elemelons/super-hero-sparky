@@ -107,6 +107,9 @@
     <Content Include="Content\besturingen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Credits achtergrond.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\creditsbutton.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
