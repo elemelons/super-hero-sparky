@@ -19,9 +19,16 @@ namespace Dogware.Scenes
         private bool countedWin = false;
 
         private float nextGameTimer = 3;
+        private float objectiveTimer = 3;
         private float timeBetweenGames = 3;
 
         private MinigameTimeIndicator timeIndicator;
+
+        private TextObject startGameTimer;
+        private TextObject objectiveText;
+        private Background bgr;
+
+        private bool playing = false;
 
         private int indicatorAmount = 0;
 
@@ -36,7 +43,13 @@ namespace Dogware.Scenes
         {
             timeIndicator = (MinigameTimeIndicator)MakeSceneObject(new MinigameTimeIndicator());
 
-            Background bgr = (Background)MakeSceneObject(new Background("superdog.png", true));
+            objectiveText = (TextObject)MakeSceneObject(new TextObject(new Vector2(400, 450), "", 0.7f));
+            startGameTimer = (TextObject)MakeSceneObject(new TextObject(new Vector2(400, 300), "", 2));
+
+            objectiveText.Active = false;
+            startGameTimer.Active = false;
+
+            bgr = (Background)MakeSceneObject(new Background("superdog.png", true));
             bgr.renderer.Scale = 0.7f;
 
             timeIndicator.DrawDepth = -2000;
@@ -44,7 +57,7 @@ namespace Dogware.Scenes
 
         public override void Update()
         {
-            if (currentGame == null)
+            if (!playing)
             {
                 if (nextGameTimer < 0)
                 {
@@ -55,25 +68,50 @@ namespace Dogware.Scenes
                     }
                     else
                     {
-                        currentGame = MinigameServer.GetMinigame(currentLevel);
-                        TGame.Instance.LoadSceneAdditive(currentGame);
+                        if (currentGame == null)
+                            currentGame = MinigameServer.GetMinigame(currentLevel);
 
-                        Console.WriteLine("Started game " + currentGame.Name);
-                        countedWin = false;
+                        if (objectiveTimer < 0)
+                        {
+                            objectiveText.Active = false;
+                            startGameTimer.Active = false;
+                        
+                            TGame.Instance.LoadSceneAdditive(currentGame);
+                            playing = true;
 
-                        foreach (GameObject obj in SceneObjects)
-                            obj.Active = false;
+                            Console.WriteLine("Started game " + currentGame.Name);
+                            countedWin = false;
 
-                        timeIndicator.Active = true;
-                        timeIndicator.gameToTrack = currentGame;
+                            foreach (GameObject obj in SceneObjects)
+                                obj.Active = false;
+
+                            timeIndicator.Active = true;
+                            timeIndicator.gameToTrack = currentGame;
+                        }
+                        else
+                        {
+                            bgr.Active = false;
+
+                            objectiveTimer -= Time.DeltaTime;
+
+                            objectiveText.Text = currentGame.GetObjective();
+                            startGameTimer.Text = Math.Floor(objectiveTimer).ToString();
+
+                            objectiveText.Active = true;
+                            startGameTimer.Active = true;
+                        }  
                     }
                 }
                 else
                 {
+                    objectiveTimer = 4;
                     nextGameTimer -= 1f / 60f;
 
                     foreach (GameObject obj in SceneObjects)
                         obj.Active = true;
+
+                    objectiveText.Active = false;
+                    startGameTimer.Active = false;
 
                     timeIndicator.Active = false;
 
@@ -102,6 +140,7 @@ namespace Dogware.Scenes
 
                     currentGame.Clean();
                     currentGame = null;
+                    playing = false;
                     nextGameTimer = timeBetweenGames;
                 }
             }
