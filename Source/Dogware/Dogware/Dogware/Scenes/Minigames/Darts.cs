@@ -27,11 +27,11 @@ namespace Dogware.Scenes.Minigames
 
             new TargetData(5, 20, 1, new int[]{5, 10, 5, 2, 8}),
             new TargetData(7, 15, 1, new int[]{2, 5, 3, 4, 5, 2, 3}),
-            new TargetData(10, 30, 1, new int[]{15, 15, 10, 20, 25, 5, 1, 4, 7, 9}),
+            new TargetData(6, 30, 1, new int[]{15, 15, 10, 20, 25, 5}),
 
-            new TargetData(10, 50, 2, new int[]{20, 10, 10, 5, 5, 20, 8, 4, 3, 2}),
-            new TargetData(10, 100, 2, new int[]{40, 20, 10, 20, 10, 5, 5, 3, 9, 6}),
-            new TargetData(10, 80, 2, new int[]{40, 30, 10, 5, 5, 8, 4, 5, 2, 3})
+            new TargetData(7, 50, 2, new int[]{20, 10, 10, 5, 5, 20, 8}),
+            new TargetData(7, 100, 2, new int[]{40, 20, 10, 20, 10, 5, 5}),
+            new TargetData(7, 80, 2, new int[]{40, 30, 10, 5, 5, 8, 4})
         };
 
         public Darts() : base("Darts", 7)

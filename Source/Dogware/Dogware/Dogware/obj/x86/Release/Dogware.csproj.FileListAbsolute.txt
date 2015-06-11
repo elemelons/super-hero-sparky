@@ -1,5 +1,13 @@
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\FunSized.xnb
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Arrow.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\besturingen.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Credits achtergrond.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\creditsbutton.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\arrow.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\BoardFrame.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\dartbord.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Flare.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\MinigameFrameBackground.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\menuscreen.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\ball.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\CanGame\ball.png
@@ -20,12 +28,14 @@ C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\W
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\greenbutton.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\MinigameFrame.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\playbutton.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\SmokePuff.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\stopbutton.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\redbutton.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\SelectionArrow.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Splash.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\superdog.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\tinyBall.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\WinAchtergrond.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\WordRecognition\bat.jpg
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\WordRecognition\cat.jpg
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\WordRecognition\dog.jpg
@@ -59,12 +69,3 @@ C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\W
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\SharpDX.Direct3D9.xml
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Release\Dogware.exe
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Release\Dogware.pdb
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\MinigameFrameBackground.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\creditsbutton.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\arrow.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\BoardFrame.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Darts\dartbord.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Scenes\Minigames\Darts.cs
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Arrow.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Credits achtergrond.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Release\Dogware.csprojResolveAssemblyReference.cache

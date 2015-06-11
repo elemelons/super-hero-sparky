@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Game1;
+using System.Threading.Tasks;
 
 namespace TimGame
 {
@@ -54,29 +55,32 @@ namespace TimGame
 
             List<CollisionData> collided = new List<CollisionData>();
 
-            foreach(GameObject toUpdate in GameObject.AllObjects)
+            Parallel.ForEach(GameObject.AllObjects, toUpdate =>
             {
                 toUpdate.UpdateObject();
 
-                foreach (GameObject potentialCollision in GameObject.AllObjects)
+                if (!toUpdate.IgnoreCollisions)
                 {
-                    if (potentialCollision != toUpdate && toUpdate.Active && potentialCollision.Active && !toUpdate.IgnoreCollisions && !potentialCollision.IgnoreCollisions)
+                    foreach (GameObject potentialCollision in GameObject.AllObjects)
                     {
-                        if (collided.Find(o => ((o.objOne == toUpdate && o.objTwo == potentialCollision) || (o.objOne == potentialCollision && o.objTwo == toUpdate))) == null)
+                        if (potentialCollision != toUpdate && toUpdate.Active && potentialCollision.Active && !toUpdate.IgnoreCollisions && !potentialCollision.IgnoreCollisions)
                         {
-                            if (toUpdate.Bounds.Intersects(potentialCollision.Bounds))
+                            if (collided.Find(o => ((o.objOne == toUpdate && o.objTwo == potentialCollision) || (o.objOne == potentialCollision && o.objTwo == toUpdate))) == null)
                             {
-                                CollisionData newCollision = new CollisionData();
+                                if (toUpdate.Bounds.Intersects(potentialCollision.Bounds))
+                                {
+                                    CollisionData newCollision = new CollisionData();
 
-                                newCollision.objOne = toUpdate;
-                                newCollision.objTwo = potentialCollision;
+                                    newCollision.objOne = toUpdate;
+                                    newCollision.objTwo = potentialCollision;
 
-                                collided.Add(newCollision);
+                                    collided.Add(newCollision);
+                                }
                             }
                         }
                     }
                 }
-            }
+            });
 
             foreach (CollisionData collision in collided)
                 collision.SendCollisionMessage();

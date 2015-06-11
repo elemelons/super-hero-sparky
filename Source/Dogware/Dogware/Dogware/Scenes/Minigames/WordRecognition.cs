@@ -23,7 +23,7 @@ namespace Dogware.Scenes.Minigames
 
         private SelectionArrow arrow;
 
-        private int[] amountsPerLevel = new int[] { 2, 3, 5 };
+        private int[] amountsPerLevel = new int[] { 3, 5, 7 };
 
         private ImagePair[] pairs = new ImagePair[]
         {

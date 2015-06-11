@@ -46,8 +46,6 @@ namespace TimGame
             set
             {
                 drawDepth = value;
-
-                SortObjects();
             }
         }
 

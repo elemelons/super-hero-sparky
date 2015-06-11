@@ -15,6 +15,10 @@ namespace Dogware.Scenes
         private int selectionIndex = 1;
         private WalkingDog dog;
 
+        private int amountOfLevels = 3;
+
+        private static bool winShown = false;
+
         public static int CurrentLevel = 0;
 
         public static Color[] LevelColors = new Color[]
@@ -73,6 +77,22 @@ namespace Dogware.Scenes
             buttons.Add((Button)MakeSceneObject(new LevelOrb(0, levelOrbPositions[0])));
             buttons.Add((Button)MakeSceneObject(new LevelOrb(1, levelOrbPositions[1])));
             buttons.Add((Button)MakeSceneObject(new LevelOrb(2, levelOrbPositions[2])));
+
+            bool allWon = true;
+
+            for(int i = 0; i < amountOfLevels; i++)
+            {
+                if(!LevelScene.LevelStatus[i])
+                {
+                    allWon = false;
+                }
+            }
+
+            if(allWon && !winShown)
+            {
+                winShown = true;
+                TGame.Instance.LoadScene(new GameCompleteScreen());
+            }
         }
     }
 }
