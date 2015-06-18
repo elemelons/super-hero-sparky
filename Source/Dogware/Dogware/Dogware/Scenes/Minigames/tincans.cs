@@ -15,13 +15,13 @@ namespace Dogware.Scenes.Minigames
         private TinCan can1;
         private TinCan can2;
         private TinCan can3;
-        private TinCan can4;
-        private TinCan can5;
+        public Background TinBackground;
         private bool correctCanHit = false;
         public int Answer;
         public int Kind;
         public int Option;
         private int[] incorrectAnswers;
+        private int canY;
 
         private int maxVal = 10;
 
@@ -48,23 +48,22 @@ namespace Dogware.Scenes.Minigames
             base.InitScene();
             SumData data = CreateSum();
             CreateNumbers();
+            canY = 340;
 
             maxVal = 10 * (10 * (LevelMenu.CurrentLevel + 1));
 
-            List<int> positions = new int[]{1, 2, 3, 4, 5, 6}.ToList();
+            List<int> positions = new int[]{2, 3, 4, 5}.ToList();
             positions = positions.OrderBy(o => TimGame.Random.Value).ToList();
 
-            //MakeSceneObject(new Background("CanGame/Blikjes achtergrond.png"));
+            TinBackground = (Background)MakeSceneObject(new Background("CanGame/Blikjes achtergrond strech.png"));
 
-            can = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[0]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[0]));
-            can1 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[1]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[1]));
-            can2 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[2]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[2]));
-            can3 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[3]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[3]));
-            can4 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[4]), 200), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[4]));
-            can5 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[5]), 200), (TextObject)MakeSceneObject(new TextObject()), Answer));
+            can = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[0]), canY), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[0]));
+            can1 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[1]), canY), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[1]));
+            can2 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[2]), canY), (TextObject)MakeSceneObject(new TextObject()), incorrectAnswers[2]));
+            can3 = (TinCan)MakeSceneObject(new TinCan(new Vector2((800 / 7 * positions[3]), canY), (TextObject)MakeSceneObject(new TextObject()), Answer));
             baseball = (Ball)MakeSceneObject(new Ball(new Vector2(100, 450)));
 
-            MakeSceneObject(new TextObject(new Vector2(400, 500), data.sum));
+            MakeSceneObject(new TextObject(new Vector2(400, 125), data.sum));
 
             correctCanHit = false;
         }
@@ -73,7 +72,7 @@ namespace Dogware.Scenes.Minigames
         {
             base.Update();
 
-            if (can5.Hit)
+            if (can3.Hit)
                 correctCanHit = true;
         }
 

@@ -54,33 +54,8 @@ C:\Users\Tim\Documents\HR\Project\repository\super-hero-sparky\Source\Dogware\Do
 C:\Users\Tim\Documents\HR\Project\repository\super-hero-sparky\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\Tim\Documents\HR\Project\repository\super-hero-sparky\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Tim\Documents\HR\Project\repository\super-hero-sparky\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.csprojResolveAssemblyReference.cache
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\FunSized.xnb
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\besturingen.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\menuscreen.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\ball.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\ball.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\Blikje.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\Blikjes achtergrond.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\afrika.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\azie.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\belgie.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\duitsland.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\europa.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\frankrijk.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\friesland.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\limburg.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\luxemburg.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\oceanie.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\overijssel.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\zuidholland.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\greenbutton.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\MinigameFrame.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\playbutton.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\stopbutton.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\redbutton.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\SelectionArrow.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Splash.png
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\superdog.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\tinyBall.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\bat.jpg
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\cat.jpg
@@ -113,67 +88,85 @@ C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\W
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XInput.xml
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D9.xml
-C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.csprojResolveAssemblyReference.cache
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.exe
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.pdb
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.exe
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.pdb
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\besturingen.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\menuscreen.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\ball.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\ball.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\Blikje.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\Blikjes achtergrond.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\afrika.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\azie.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\belgie.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\duitsland.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\europa.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\frankrijk.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\friesland.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\limburg.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\luxemburg.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\oceanie.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\overijssel.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\zuidholland.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\greenbutton.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\MinigameFrame.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\playbutton.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\stopbutton.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\redbutton.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\SelectionArrow.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Splash.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\superdog.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\tinyBall.png
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\bat.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\cat.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\dog.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\fly.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\frog.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\monkey.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\mouse.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\solaire.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\spider.jpg
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Dogware.exe
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Dogware.pdb
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\MonoGame.Framework.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.MediaFoundation.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XAudio2.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D11.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.DXGI.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct2D1.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XInput.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.RawInput.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D9.dll
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\MonoGame.Framework.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.MediaFoundation.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XAudio2.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D11.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.DXGI.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct2D1.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XInput.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.RawInput.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D9.xml
-C:\Users\Laura\Desktop\Project 4 spel\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\FunSized.xnb
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\baseball.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\tincan.jpg
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.csprojResolveAssemblyReference.cache
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\FunSized.xnb
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\ball.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\SelectionArrow.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\tinyBall.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\bat.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\cat.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\dog.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\fly.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\frog.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\monkey.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\mouse.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\solaire.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WordRecognition\spider.jpg
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\FunSized.spritefont
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Dogware.exe
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Dogware.pdb
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\MonoGame.Framework.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XAudio2.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D11.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.DXGI.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct2D1.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XInput.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.RawInput.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D9.dll
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\MonoGame.Framework.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XAudio2.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D11.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.DXGI.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct2D1.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.XInput.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.RawInput.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\SharpDX.Direct3D9.xml
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.exe
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.pdb
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Debug\Dogware.csprojResolveAssemblyReference.cache
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\ball.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\Blikje.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\Blikjes achtergrond.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Frame voor achter minigames.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\CanGame\Blikjes achtergrond strech.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Arrow.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\beginscherm.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\besturingen.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Credits achtergrond.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\creditsbutton.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Flare.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\greenbutton.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\menuscreen.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\MinigameFrame.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\MinigameFrameBackground.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\playbutton.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\redbutton.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\SmokePuff.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Splash.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\stopbutton.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\superdog.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\WinAchtergrond.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Darts\arrow.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Darts\BoardFrame.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Darts\dartbord.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\afrika.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\azie.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\belgie.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\duitsland.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\europa.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\frankrijk.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\friesland.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\limburg.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\luxemburg.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\oceanie.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\overijssel.png
+D:\Users\Kalle\Desktop\mooie naam\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Debug\Content\Geography\zuidholland.png

@@ -20,7 +20,7 @@ namespace Dogware.Objects.tin_cans
 
         public override void Update()
         {
-            renderer.Scale = (transform.Position.Y / 600f + 0.5f) * 0.6f;
+            renderer.Scale = Math.Max(((transform.Position.Y / 600f) - 0.5f) * 2.0f, 0);
             transform.Position += Velocity;
 
             if (transform.Position.X <= 50 || transform.Position.X >= 750)

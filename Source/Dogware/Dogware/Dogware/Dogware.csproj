@@ -108,6 +108,9 @@
     <Content Include="Content\besturingen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\CanGame\Blikjes achtergrond strech.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Credits achtergrond.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

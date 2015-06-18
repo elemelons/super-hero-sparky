@@ -20,9 +20,8 @@ namespace Dogware.Objects.tin_cans
             text = obj;
             obj.transform.LocalPosition = Vector2.Zero;
             obj.Parent = this;
-            renderer.Scale = 0.30f;
             obj.Scale = 0.5f;
-            renderer.Scale = 0.5f;
+            renderer.Scale = 0.4f;
             Value = value;
 
             obj.Text = value.ToString();

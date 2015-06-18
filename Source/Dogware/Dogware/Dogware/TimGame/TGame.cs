@@ -55,7 +55,7 @@ namespace TimGame
 
             "CanGame/ball.png",
             "CanGame/Blikje.png",
-            "CanGame/Blikjes achtergrond.png",
+            "CanGame/Blikjes achtergrond strech.png",
 
             "Darts/arrow.png",
             "Darts/BoardFrame.png",
