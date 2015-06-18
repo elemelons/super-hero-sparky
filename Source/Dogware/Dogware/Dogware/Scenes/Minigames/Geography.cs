@@ -51,7 +51,7 @@ namespace Dogware.Scenes.Minigames
 
         public bool Correct = false;
 
-        public Geography() : base("Geography", 5)
+        public Geography() : base("Geography", 3.5f)
         {
 
         }

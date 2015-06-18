@@ -39,6 +39,8 @@ namespace TimGame
             "Flare.png",
             "SmokePuff.png",
             "WinAchtergrond.png",
+            "alarm clock.png",
+            "bone.png",
 
             "Geography/friesland.png",
             "Geography/limburg.png",
@@ -61,7 +63,12 @@ namespace TimGame
             "Darts/BoardFrame.png",
             "Darts/dartbord.png",
 
+            "Dodging/Dog.png",
+            "Dodging/Achtergrond.png",
+            "Dodging/Falling cat.png",
+
             "greenButton.png",
+            "secretbutton.png",
             "redButton.png",
             "Splash.png",
             "playbutton.png",

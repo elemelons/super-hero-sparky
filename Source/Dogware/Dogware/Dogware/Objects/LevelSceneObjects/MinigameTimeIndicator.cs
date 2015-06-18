@@ -13,16 +13,15 @@ namespace Dogware.Objects.LevelSceneObjects
     {
         public MinigameBase gameToTrack;
 
-        public MinigameTimeIndicator() : base("Timer", true, Vector2.Zero, "ball.png")
+        public MinigameTimeIndicator() : base("Timer", true, Vector2.Zero, "alarm clock.png")
         {
             Active = false;
+            renderer.Scale = 0.17f;
         }
 
         public override void Update()
         {
             base.Update();
-
-            renderer.BlendColor = LevelMenu.LevelColors[LevelMenu.CurrentLevel];
 
             if(gameToTrack != null)
                 transform.Position = new Vector2(30 +  740 * gameToTrack.TimeRemainingAsPercentage, 570);

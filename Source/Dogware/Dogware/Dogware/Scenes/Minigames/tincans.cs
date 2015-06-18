@@ -38,7 +38,7 @@ namespace Dogware.Scenes.Minigames
             public int answer;
         }
 
-        public TinCans() : base("Tin Cans", 6)
+        public TinCans() : base("Tin Cans", 4)
         {
 
         }

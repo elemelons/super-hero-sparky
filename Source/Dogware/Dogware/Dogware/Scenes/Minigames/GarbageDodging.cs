@@ -24,10 +24,10 @@ namespace Dogware.Scenes.Minigames
             dog = (RunningDog)MakeSceneObject(new RunningDog());
 
             for (int i = 0; i < 3 * (LevelMenu.CurrentLevel + 1); i++ )
-                MakeSceneObject(new Obstacle(new Vector2(300 + random.Next(200), -300 + random.Next(500))));
+                MakeSceneObject(new Obstacle(new Vector2(random.Next(800), -300 + random.Next(400))));
 
             Obstacle.move = true;
-            initialTime = 3 + 4 * LevelMenu.CurrentLevel;
+            initialTime = 3 + 2 * LevelMenu.CurrentLevel;
             time = initialTime;
         }
 

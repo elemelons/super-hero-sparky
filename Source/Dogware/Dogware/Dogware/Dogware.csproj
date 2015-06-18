@@ -48,6 +48,8 @@
     <Compile Include="Objects\GarbageDodging\Obstacle.cs" />
     <Compile Include="Objects\GarbageDodging\RunningDog.cs" />
     <Compile Include="Objects\GeographyObjects\Gebied.cs" />
+    <Compile Include="Objects\JumpingObjects\JumpingDog.cs" />
+    <Compile Include="Objects\JumpingObjects\Obstacle.cs" />
     <Compile Include="Objects\LevelSceneObjects\MinigameTimeIndicator.cs" />
     <Compile Include="Objects\LevelSceneObjects\PointIndicator.cs" />
     <Compile Include="Objects\CreditButton.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="Scenes\Minigames\Darts.cs" />
     <Compile Include="Scenes\Minigames\GarbageDodging.cs" />
     <Compile Include="Scenes\Minigames\Geography.cs" />
+    <Compile Include="Scenes\Minigames\Jumping.cs" />
     <Compile Include="Scenes\Minigames\MinigameBase.cs" />
     <Compile Include="Scenes\Minigames\MinigameServer.cs" />
     <Compile Include="Scenes\Minigames\TestGame.cs" />
@@ -102,16 +105,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\alarm clock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Arrow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\besturingen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\bone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\CanGame\Blikjes achtergrond strech.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\Credits achtergrond.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Dodging\Achtergrond.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Dodging\Dog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Dodging\Falling cat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\secretbutton.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\creditsbutton.png">

@@ -13,9 +13,10 @@ namespace Dogware.Objects.GarbageDodging
         public static bool move = true;
         private float moveSpeed = 4;
 
-        public Obstacle(Vector2 position) : base("garbage", false, position, "ball.png")
+        public Obstacle(Vector2 position) : base("garbage", false, position, "Dodging/Falling cat.png")
         {
             DrawDepth = 1;
+            renderer.Scale = 0.2f;
         }
 
         public override void Update()

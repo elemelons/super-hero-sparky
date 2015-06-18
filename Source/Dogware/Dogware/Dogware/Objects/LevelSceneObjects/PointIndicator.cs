@@ -11,16 +11,18 @@ namespace Dogware.Objects.LevelSceneObjects
     {
         Vector2 targetPos;
 
-        public PointIndicator(Vector2 targetPosition) : base("PointIndicator", false, targetPosition + new Vector2(0, -500), "ball.png")
+        public PointIndicator(Vector2 targetPosition) : base("PointIndicator", false, targetPosition + new Vector2(0, -500), "bone.png")
         {
             targetPos = targetPosition;
+            renderer.Scale = 0.5f;
+            transform.Rotation = MathHelper.ToRadians(45);
         }
 
         public override void Update()
         {
             base.Update();
 
-            transform.Position = Vector2.Lerp(transform.Position, targetPos, 0.05f);
+            transform.Position = Vector2.Lerp(transform.Position, targetPos, 0.1f);
         }
     }
 }

@@ -10,11 +10,11 @@ namespace Dogware.Objects.GarbageDodging
     class RunningDog : GameObject
     {
         public bool HitGarbage = false;
-        private float hSpeed = 2;
+        private float hSpeed = 4;
 
-        public RunningDog() : base("Dog", false, new Vector2(400, 500), "tinyBall.png")
+        public RunningDog() : base("Dog", false, new Vector2(400, 500), "Dodging/Dog.png")
         {
-
+            renderer.Scale = 0.3f;
         }
 
         public override void Update()

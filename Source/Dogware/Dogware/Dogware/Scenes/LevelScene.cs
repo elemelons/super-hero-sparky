@@ -94,10 +94,10 @@ namespace Dogware.Scenes
                         {
                             bgr.Active = false;
 
-                            objectiveTimer -= Time.DeltaTime;
+                            objectiveTimer -= Time.DeltaTime * 2;
 
                             objectiveText.Text = currentGame.GetObjective();
-                            startGameTimer.Text = Math.Floor(objectiveTimer).ToString();
+                            startGameTimer.Text = Math.Max(Math.Floor(objectiveTimer), 0).ToString();
 
                             objectiveText.Active = true;
                             startGameTimer.Active = true;
@@ -107,7 +107,7 @@ namespace Dogware.Scenes
                 else
                 {
                     objectiveTimer = 4;
-                    nextGameTimer -= 1f / 60f;
+                    nextGameTimer -= 2f / 60f;
 
                     foreach (GameObject obj in SceneObjects)
                         obj.Active = true;

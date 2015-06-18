@@ -32,9 +32,9 @@ namespace Dogware.Objects.GeographyObjects
 
             int[] positions = new int[] { 0, 50, 100 }.OrderBy(o => TimGame.Random.Value).ToArray();
 
-            baseGame.MakeSceneObject(new TextObject(new Vector2(600, 400 + positions[0]), correct)).renderer.Scale = 0.5f;
-            baseGame.MakeSceneObject(new TextObject(new Vector2(600, 400 + positions[1]), incorrect1)).renderer.Scale = 0.5f;
-            baseGame.MakeSceneObject(new TextObject(new Vector2(600, 400 + positions[2]), incorrect2)).renderer.Scale = 0.5f;
+            baseGame.MakeSceneObject(new TextObject(new Vector2(400, 400 + positions[0]), correct)).renderer.Scale = 0.5f;
+            baseGame.MakeSceneObject(new TextObject(new Vector2(400, 400 + positions[1]), incorrect1)).renderer.Scale = 0.5f;
+            baseGame.MakeSceneObject(new TextObject(new Vector2(400, 400 + positions[2]), incorrect2)).renderer.Scale = 0.5f;
 
             if (positions[0] == 50)
                 correctAnswerIndex = 1;

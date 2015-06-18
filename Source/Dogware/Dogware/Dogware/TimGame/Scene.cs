@@ -33,8 +33,10 @@ namespace TimGame
 
         public void DeleteSceneObject(GameObject obj)
         {
+            if(obj != null)
+                obj.Destroy();
+
             SceneObjects.Remove(obj);
-            obj.Destroy();
         }
 
         public void UpdateScene()

@@ -11,9 +11,11 @@ namespace Dogware.Objects
     {
         private Vector2 targetPosition;
 
-        public WalkingDog(Vector2 levelOnePosition) : base("Dog", true, new Vector2(400, 700), "tinyBall.png")
+        public WalkingDog(Vector2 levelOnePosition) : base("Dog", true, new Vector2(400, 700), "Dodging/Dog.png")
         {
             targetPosition = levelOnePosition;
+            renderer.Scale = 0.3f;
+            DrawDepth = -5;
         }
 
         public void MoveTo(Vector2 pos)
@@ -25,8 +27,11 @@ namespace Dogware.Objects
         {
             base.Update();
 
-            transform.Forward = targetPosition - transform.Position;
-            transform.Position += transform.Forward * Math.Min(3, (Vector2.Distance(transform.Position, targetPosition) - 50));
+            Vector2 trgt = (targetPosition - transform.Position);
+            trgt.Normalize();
+
+            transform.Forward = Vector2.Lerp(transform.Forward, trgt, 0.1f);
+            transform.Position += transform.Forward * Math.Min(3, (Vector2.Distance(transform.Position, targetPosition) - 100));
         }
     }
 }

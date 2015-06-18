@@ -69,6 +69,8 @@ namespace Dogware.Scenes
         {
             arrow = (SelectionArrow)MakeSceneObject(new SelectionArrow(new Vector2(10, 50)));
 
+            arrow.DrawDepth = -1000;
+
             dog = (WalkingDog)MakeSceneObject(new WalkingDog(levelOrbPositions[0]));
 
             buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(400, 550))));
