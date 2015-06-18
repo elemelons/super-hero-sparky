@@ -76,3 +76,5 @@ C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\W
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\bone.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Dodging\Achtergrond.png
 C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Dodging\Falling cat.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\bin\Windows\Release\Content\Levels.png
+C:\Users\Tim\Documents\HR\Project\SVN\trunk\Source\Dogware\Dogware\Dogware\obj\x86\Release\Dogware.csprojResolveAssemblyReference.cache

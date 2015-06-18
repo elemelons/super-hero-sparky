@@ -132,6 +132,9 @@
     <Content Include="Content\Dodging\Falling cat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Levels.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\secretbutton.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -30,9 +30,9 @@ namespace Dogware.Scenes
 
         private Vector2[] levelOrbPositions = new Vector2[]
         {
-            new Vector2(200, 400),
-            new Vector2(600, 250),
-            new Vector2(300, 150)
+            new Vector2(260, 480),
+            new Vector2(570, 430),
+            new Vector2(300, 220)
         };
 
         public LevelMenu() : base("Main Menu")
@@ -72,6 +72,8 @@ namespace Dogware.Scenes
             arrow.DrawDepth = -1000;
 
             dog = (WalkingDog)MakeSceneObject(new WalkingDog(levelOrbPositions[0]));
+
+            MakeSceneObject(new Background("Levels.png", true));
 
             buttons.Add((Button)MakeSceneObject(new QuitButton(new Vector2(400, 550))));
             buttons[0].renderer.Scale = 0.4f;

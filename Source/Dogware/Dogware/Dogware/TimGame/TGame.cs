@@ -67,6 +67,8 @@ namespace TimGame
             "Dodging/Achtergrond.png",
             "Dodging/Falling cat.png",
 
+            "Levels.png",
+
             "greenButton.png",
             "secretbutton.png",
             "redButton.png",
