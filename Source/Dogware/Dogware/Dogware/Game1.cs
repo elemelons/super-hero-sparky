@@ -1,6 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+using System;
 
 namespace Game1
 {
@@ -55,6 +58,12 @@ namespace Game1
         public Texture2D LoadTexture(string path)
         {
             return Content.Load<Texture2D>(path);
+        }
+
+        public SoundEffect LoadSound(string path)
+        {
+            //string actualPath = "file:\\" + System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\Content\\" + path;
+            return Content.Load<SoundEffect>(path);
         }
 
         /// <summary>

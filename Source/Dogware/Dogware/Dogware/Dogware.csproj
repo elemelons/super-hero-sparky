@@ -89,6 +89,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scenes\LevelMenu.cs" />
+    <Compile Include="TimGame\SoundLoader.cs" />
     <Compile Include="TimGame\TGame.cs" />
     <Compile Include="TimGame\GameObject.cs" />
     <Compile Include="TimGame\Input.cs" />
@@ -220,6 +221,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\SmokePuff.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sound\lose.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sound\win.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\stopbutton.png">

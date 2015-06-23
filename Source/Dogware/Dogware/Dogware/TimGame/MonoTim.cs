@@ -28,6 +28,7 @@ namespace TimGame
         private GraphicsDeviceManager graphics;
         private Game1.Game1 baseGame;
         private SpriteLoader spriteLoader;
+        private SoundLoader soundLoader;
 
         public static MonoTim Instance { get; private set; }
 
@@ -41,6 +42,7 @@ namespace TimGame
             this.baseGame = baseGame;
 
             spriteLoader = new SpriteLoader(baseGame);
+            //soundLoader = new SoundLoader(baseGame);
 
             GameStep = 0;
 
@@ -116,6 +118,11 @@ namespace TimGame
             {
                 spriteLoader.Load(spriteBatch, toLoad);
             }
+
+           /* foreach (string toLoad in TGame.SoundNames)
+            {
+                soundLoader.Load(toLoad);
+            }*/
         }
 
         public void Unload()

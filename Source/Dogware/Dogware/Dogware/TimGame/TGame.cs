@@ -16,6 +16,12 @@ namespace TimGame
 
         public SpriteFont MainFont;
 
+        public static string[] SoundNames = new string[]
+        {
+            "win",
+            "lose"
+        };
+
         public static string[] SpriteNames = new string[]
         {
             "ball.png",

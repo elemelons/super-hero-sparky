@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TimGame;
 
 namespace Dogware.Objects
 {
@@ -11,7 +12,7 @@ namespace Dogware.Objects
     {
         public PlayButton(Vector2 position) : base("PlayButton", position, "playbutton.png")
         {
-
+            //SoundLoader.Instance.PlaySound("win");
         }
 
         public override void OnButtonClick()
