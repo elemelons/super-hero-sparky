@@ -45,7 +45,6 @@ namespace Dogware.Scenes
 
             objectiveText = (TextObject)MakeSceneObject(new TextObject(new Vector2(400, 450), "", 0.4f));
 
-
             startGameTimer = (TextObject)MakeSceneObject(new TextObject(new Vector2(400, 300), "", 2));
 
             objectiveText.Active = false;
@@ -138,6 +137,11 @@ namespace Dogware.Scenes
                     {
                         gamesWon++;
                         countedWin = true;
+                        bgr.renderer.SetTexture("superdog.png");
+                    }
+                    else if (!currentGame.HasWon() && !countedWin)
+                    {
+                        bgr.renderer.SetTexture("Sad dog.png");
                     }
 
                     currentGame.Clean();
